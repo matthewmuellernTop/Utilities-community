@@ -1,0 +1,20 @@
+{
+  "id": "array-vectors",
+  "type": "Block",
+  "title": "Array Vectors",
+  "summary": "Use this block in conjunction with the \"Translate Object\" or \"Translation Transform\" blocks to create a three-dimensional array of any object.",
+  "author": "DaveMakesStuff",
+  "version": "0.1.0",
+  "ntopVersion": "4.12+",
+  "license": "MIT",
+  "domain": "Geometry",
+  "complexity": "Beginner",
+  "tags": [
+    "vector",
+    "array",
+    "object",
+    "any object",
+    "grid"
+  ],
+  "preview": "geometry"
+}

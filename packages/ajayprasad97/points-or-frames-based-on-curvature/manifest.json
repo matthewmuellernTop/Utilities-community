@@ -1,0 +1,22 @@
+{
+  "id": "points-or-frames-based-on-curvature",
+  "type": "Block",
+  "title": "Points or Frames based on Curvature",
+  "summary": "Distribute points and frames non-uniformly along a spline, packing more into high-curvature regions and fewer into flat sections.",
+  "author": "ajayprasad97",
+  "version": "0.1.0",
+  "ntopVersion": "5.47",
+  "license": "MIT",
+  "domain": "Geometry",
+  "application": "Curve",
+  "complexity": "Intermediate",
+  "tags": [
+    "curvature",
+    "spline",
+    "points",
+    "frames",
+    "arc length",
+    "sweep"
+  ],
+  "preview": "geometry"
+}

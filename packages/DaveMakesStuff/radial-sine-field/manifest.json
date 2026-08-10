@@ -1,0 +1,18 @@
+{
+  "id": "radial-sine-field",
+  "type": "Block",
+  "title": "Radial Sine Field",
+  "summary": "Generate a radial sine field by defining the number of periods and the axis around which the field rotates.",
+  "author": "DaveMakesStuff",
+  "version": "0.1.0",
+  "ntopVersion": "4.26+",
+  "license": "MIT",
+  "domain": "Geometry",
+  "complexity": "Beginner",
+  "tags": [
+    "sine",
+    "radial",
+    "field"
+  ],
+  "preview": "geometry"
+}

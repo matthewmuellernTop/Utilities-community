@@ -1,0 +1,19 @@
+{
+  "id": "delaunay-lines-from-points-on-surface",
+  "type": "Block",
+  "title": "Delaunay Lines from Points on Surface",
+  "summary": "Create a network of Delaunay lines from points on a surface with option to output full network or boundary only.",
+  "author": "DaveMakesStuff",
+  "version": "0.1.0",
+  "ntopVersion": "4.26+",
+  "license": "MIT",
+  "domain": "Geometry",
+  "complexity": "Intermediate",
+  "tags": [
+    "mesh",
+    "graph",
+    "delaunay",
+    "points"
+  ],
+  "preview": "geometry"
+}

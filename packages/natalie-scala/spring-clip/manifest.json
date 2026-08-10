@@ -1,0 +1,22 @@
+{
+  "id": "spring-clip",
+  "type": "Block",
+  "title": "Serpent Spring Clip",
+  "summary": "Customizable serpentine spring clip with a toggle and retractable tongue for snap-fit latching between two objects.",
+  "author": "natalie-scala",
+  "version": "0.1.0",
+  "ntopVersion": "4.12+",
+  "license": "MIT",
+  "domain": "Mechanical",
+  "complexity": "Advanced",
+  "tags": [
+    "clip",
+    "latch",
+    "snap-fit",
+    "spring",
+    "serpentine",
+    "toggle",
+    "fastener"
+  ],
+  "preview": "geometry"
+}

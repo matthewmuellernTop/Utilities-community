@@ -1,0 +1,20 @@
+{
+  "id": "snub-polyhedron-generator",
+  "type": "Block",
+  "title": "Snub Polyhedron Generator",
+  "summary": "Generate a Snub Cuboctahedron or Snub Icosidodecahedron with an option to select right or left chirality. ",
+  "author": "DaveMakesStuff",
+  "version": "0.1.0",
+  "ntopVersion": "4.26+",
+  "license": "MIT",
+  "domain": "Geometry",
+  "complexity": "Intermediate",
+  "tags": [
+    "polyhedra",
+    "polyhedron",
+    "snub",
+    "Cuboctahedron",
+    "Icosidodecahedron"
+  ],
+  "preview": "geometry"
+}

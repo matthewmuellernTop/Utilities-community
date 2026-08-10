@@ -1,0 +1,23 @@
+{
+  "id": "regular-polyhedron-generator",
+  "type": "Block",
+  "title": "Regular Polyhedron Generator",
+  "summary": "Generate the five platonic polyhedra (tetrahedron, cube, octahedron, icosahedron, dodecahedron) with options to create uniform truncated, rectified, omnitruncated or custom versions. ",
+  "author": "DaveMakesStuff",
+  "version": "0.1.0",
+  "ntopVersion": "4.26+",
+  "license": "MIT",
+  "domain": "Geometry",
+  "complexity": "Intermediate",
+  "tags": [
+    "tetrahedron",
+    "octahedron",
+    "icosahedron",
+    "dodecahedron",
+    "platonic",
+    "Archimedean",
+    "polyhedra",
+    "polyhedron"
+  ],
+  "preview": "geometry"
+}

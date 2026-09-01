@@ -1,0 +1,20 @@
+{
+  "id": "electric-ducted-fan-blended-wing-body",
+  "type": "Notebook",
+  "title": "Electric Ducted Fan Blended Wing Body",
+  "summary": "Vlad the Inhaler is an aircraft that was designed, built, and flown by nTop's 2026 summer interns ",
+  "author": "matthewmuellernTop",
+  "org": "nTop",
+  "version": "0.1.0",
+  "ntopVersion": "5.54",
+  "license": "MIT",
+  "domain": "Aerospace",
+  "complexity": "Intermediate",
+  "tags": [
+    "Aircraft",
+    "DFAM",
+    "FlowAnalysis",
+    "BlendedWingBody"
+  ],
+  "preview": "geometry"
+}

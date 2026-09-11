@@ -7,7 +7,7 @@ This custom block creates almost evenly spaced points on a body based on a desir
 Clone this repo or copy the package folder into your nTop workspace:
 
 ```bash
-git clone https://github.com/nTopology/Utilities.git
+git clone https://github.com/nTopology/Utilities-community.git
 ```
 
 The package lives at `packages/ntop/max-evenly-spaced-points/`.

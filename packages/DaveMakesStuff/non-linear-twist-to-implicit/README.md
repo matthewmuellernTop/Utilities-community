@@ -9,7 +9,7 @@ Add a field-driven variable twist to an implicit around the z axis
 Clone this repo or copy the package folder into your nTop workspace:
 
 ```bash
-git clone https://github.com/nTopology/Utilities.git
+git clone https://github.com/nTopology/Utilities-community.git
 ```
 
 The package lives at `packages/DaveMakesStuff/non-linear-twist-to-implicit/`.

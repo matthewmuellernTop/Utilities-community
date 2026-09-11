@@ -7,7 +7,7 @@ Create a "sagging" spline from a line using "Length Factor" input to modify amou
 Clone this repo or copy the package folder into your nTop workspace:
 
 ```bash
-git clone https://github.com/nTopology/Utilities.git
+git clone https://github.com/nTopology/Utilities-community.git
 ```
 
 The package lives at `packages/DaveMakesStuff/catenary-spline-from-line/`.

@@ -7,7 +7,7 @@ This custom block replaces (substitutes) values of an initial list with newly de
 Clone this repo or copy the package folder into your nTop workspace:
 
 ```bash
-git clone https://github.com/nTopology/Utilities.git
+git clone https://github.com/nTopology/Utilities-community.git
 ```
 
 The package lives at `packages/ntop/replace-values-in-a-list/`.

@@ -7,7 +7,7 @@ This custom block filters lattice beams selectively by the length in a defined c
 Clone this repo or copy the package folder into your nTop workspace:
 
 ```bash
-git clone https://github.com/nTopology/Utilities.git
+git clone https://github.com/nTopology/Utilities-community.git
 ```
 
 The package lives at `packages/ntop/filter-beams-by-length-in-a-containment/`.

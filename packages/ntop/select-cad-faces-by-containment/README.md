@@ -7,7 +7,7 @@ This custom block selects CAD faces that are contained inside a region. The enti
 Clone this repo or copy the package folder into your nTop workspace:
 
 ```bash
-git clone https://github.com/nTopology/Utilities.git
+git clone https://github.com/nTopology/Utilities-community.git
 ```
 
 The package lives at `packages/ntop/select-cad-faces-by-containment/`.

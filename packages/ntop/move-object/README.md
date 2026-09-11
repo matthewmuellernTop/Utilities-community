@@ -7,7 +7,7 @@ This block moves the object's center to the new location provided and rotates th
 Clone this repo or copy the package folder into your nTop workspace:
 
 ```bash
-git clone https://github.com/nTopology/Utilities.git
+git clone https://github.com/nTopology/Utilities-community.git
 ```
 
 The package lives at `packages/ntop/move-object/`.

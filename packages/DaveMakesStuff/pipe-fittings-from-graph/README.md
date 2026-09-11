@@ -7,7 +7,7 @@ Add aesthetic "pipe fittings" to a graph. To remove bolts set "Bolt Diameter" to
 Clone this repo or copy the package folder into your nTop workspace:
 
 ```bash
-git clone https://github.com/nTopology/Utilities.git
+git clone https://github.com/nTopology/Utilities-community.git
 ```
 
 The package lives at `packages/DaveMakesStuff/pipe-fittings-from-graph/`.

@@ -7,7 +7,7 @@ Create a surface mesh with n sides. Input a large n value to approximate a circl
 Clone this repo or copy the package folder into your nTop workspace:
 
 ```bash
-git clone https://github.com/nTopology/Utilities.git
+git clone https://github.com/nTopology/Utilities-community.git
 ```
 
 The package lives at `packages/DaveMakesStuff/mesh-n-gon/`.

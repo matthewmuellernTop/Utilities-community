@@ -7,7 +7,7 @@ This blocks takes a Displacement Vector Point Map and turns it into a distorted 
 Clone this repo or copy the package folder into your nTop workspace:
 
 ```bash
-git clone https://github.com/nTopology/Utilities.git
+git clone https://github.com/nTopology/Utilities-community.git
 ```
 
 The package lives at `packages/ntop/displacement-distorted-implicit-body/`.

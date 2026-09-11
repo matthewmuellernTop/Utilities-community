@@ -7,7 +7,7 @@ Given a face, this custom block will place four random points on the face and th
 Clone this repo or copy the package folder into your nTop workspace:
 
 ```bash
-git clone https://github.com/nTopology/Utilities.git
+git clone https://github.com/nTopology/Utilities-community.git
 ```
 
 The package lives at `packages/ntop/center-plane-of-mesh-face/`.

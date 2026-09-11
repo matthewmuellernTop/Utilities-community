@@ -7,7 +7,7 @@ Create a scalar field of the index values of nearest vertices in a graph.
 Clone this repo or copy the package folder into your nTop workspace:
 
 ```bash
-git clone https://github.com/nTopology/Utilities.git
+git clone https://github.com/nTopology/Utilities-community.git
 ```
 
 The package lives at `packages/DaveMakesStuff/point-index-field-from-graph/`.

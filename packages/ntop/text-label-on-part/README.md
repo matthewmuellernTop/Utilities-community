@@ -7,7 +7,7 @@ This custom block applies a text label engraving or embossing on a part.
 Clone this repo or copy the package folder into your nTop workspace:
 
 ```bash
-git clone https://github.com/nTopology/Utilities.git
+git clone https://github.com/nTopology/Utilities-community.git
 ```
 
 The package lives at `packages/ntop/text-label-on-part/`.

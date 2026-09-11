@@ -7,7 +7,7 @@ This custom block takes a line of text and converts it to an implicit body. This
 Clone this repo or copy the package folder into your nTop workspace:
 
 ```bash
-git clone https://github.com/nTopology/Utilities.git
+git clone https://github.com/nTopology/Utilities-community.git
 ```
 
 The package lives at `packages/ntop/text-along-a-curve-on-body/`.

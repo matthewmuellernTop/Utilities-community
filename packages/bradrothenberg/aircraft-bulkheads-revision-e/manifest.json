@@ -1,0 +1,23 @@
+{
+  "id": "aircraft-bulkheads-revision-e",
+  "type": "Bundle",
+  "title": "Aircraft bulkheads E: conformal pockets and hat passages",
+  "summary": "Explore twelve native station parts with conformal pockets, floor blends, and revised passages for hat longerons.",
+  "author": "bradrothenberg",
+  "org": "nTop",
+  "version": "0.1.0",
+  "ntopVersion": "6.1",
+  "license": "MIT",
+  "domain": "Aerospace",
+  "application": "Geometry",
+  "complexity": "Advanced",
+  "tags": [
+    "notebook-api",
+    "parametric",
+    "modeling",
+    "geometry"
+  ],
+  "preview": "geometry",
+  "coverImage": "cover.png",
+  "packageFile": "forward-primary-bulkhead.ntop"
+}

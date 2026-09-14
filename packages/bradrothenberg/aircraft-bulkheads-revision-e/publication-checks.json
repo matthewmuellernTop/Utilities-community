@@ -1,0 +1,139 @@
+{
+  "scope": "Offline publication preparation; no new native execution",
+  "models": [
+    {
+      "file": "aft-primary-bulkhead.ntop",
+      "source_sha256": "ab7c18ebe5b21eb8c7d855987f76d9ccadca8770c45c9cb7d57c74e1d4c5ca69",
+      "published_sha256": "ab7c18ebe5b21eb8c7d855987f76d9ccadca8770c45c9cb7d57c74e1d4c5ca69",
+      "bytes": 2716755,
+      "changed_chunks": [],
+      "relative_export_filenames": [],
+      "source_unchanged": true,
+      "geometry_graph_and_binary_payloads_unchanged": true,
+      "new_native_execution": false
+    },
+    {
+      "file": "f01-frame.ntop",
+      "source_sha256": "e0cbfd523daec9cba7da04fcbfe85fefd9fca4e7c5690fcdb5870d22b317b160",
+      "published_sha256": "e0cbfd523daec9cba7da04fcbfe85fefd9fca4e7c5690fcdb5870d22b317b160",
+      "bytes": 353616,
+      "changed_chunks": [],
+      "relative_export_filenames": [],
+      "source_unchanged": true,
+      "geometry_graph_and_binary_payloads_unchanged": true,
+      "new_native_execution": false
+    },
+    {
+      "file": "f02-frame.ntop",
+      "source_sha256": "681dfc4df9ac33def30d1bb7eeb9de50888529d0d99ea3f31934aaabdd5ecb86",
+      "published_sha256": "681dfc4df9ac33def30d1bb7eeb9de50888529d0d99ea3f31934aaabdd5ecb86",
+      "bytes": 413897,
+      "changed_chunks": [],
+      "relative_export_filenames": [],
+      "source_unchanged": true,
+      "geometry_graph_and_binary_payloads_unchanged": true,
+      "new_native_execution": false
+    },
+    {
+      "file": "f03-frame.ntop",
+      "source_sha256": "43b813dce3a395d69f44eb7706f907351cbc0756ed59055c28e2122e00a378b6",
+      "published_sha256": "43b813dce3a395d69f44eb7706f907351cbc0756ed59055c28e2122e00a378b6",
+      "bytes": 418619,
+      "changed_chunks": [],
+      "relative_export_filenames": [],
+      "source_unchanged": true,
+      "geometry_graph_and_binary_payloads_unchanged": true,
+      "new_native_execution": false
+    },
+    {
+      "file": "f04-frame.ntop",
+      "source_sha256": "dcbabb2d468f820a45e59abb50adb35da7fa81fef2bd92ec93f98c95db6234ad",
+      "published_sha256": "dcbabb2d468f820a45e59abb50adb35da7fa81fef2bd92ec93f98c95db6234ad",
+      "bytes": 404801,
+      "changed_chunks": [],
+      "relative_export_filenames": [],
+      "source_unchanged": true,
+      "geometry_graph_and_binary_payloads_unchanged": true,
+      "new_native_execution": false
+    },
+    {
+      "file": "f05-frame.ntop",
+      "source_sha256": "70ba7d160d0b09251971f9f8b068c42ee9b348db4e23245fb2cb22ae709183f8",
+      "published_sha256": "70ba7d160d0b09251971f9f8b068c42ee9b348db4e23245fb2cb22ae709183f8",
+      "bytes": 411264,
+      "changed_chunks": [],
+      "relative_export_filenames": [],
+      "source_unchanged": true,
+      "geometry_graph_and_binary_payloads_unchanged": true,
+      "new_native_execution": false
+    },
+    {
+      "file": "f07-frame.ntop",
+      "source_sha256": "00158e21f24c4baf1add1772f4c5a3ab6c788ec1132756718020b460325dac0a",
+      "published_sha256": "00158e21f24c4baf1add1772f4c5a3ab6c788ec1132756718020b460325dac0a",
+      "bytes": 398983,
+      "changed_chunks": [],
+      "relative_export_filenames": [],
+      "source_unchanged": true,
+      "geometry_graph_and_binary_payloads_unchanged": true,
+      "new_native_execution": false
+    },
+    {
+      "file": "f09-frame.ntop",
+      "source_sha256": "50330efd6dff063f7d0f778684a4e1a0422d933e61939ac53115b4dc7a814a92",
+      "published_sha256": "50330efd6dff063f7d0f778684a4e1a0422d933e61939ac53115b4dc7a814a92",
+      "bytes": 389792,
+      "changed_chunks": [],
+      "relative_export_filenames": [],
+      "source_unchanged": true,
+      "geometry_graph_and_binary_payloads_unchanged": true,
+      "new_native_execution": false
+    },
+    {
+      "file": "f10-frame.ntop",
+      "source_sha256": "96a840d2d5924548cef3967b04151fbea34639f58ba46d446618e42ba1112372",
+      "published_sha256": "96a840d2d5924548cef3967b04151fbea34639f58ba46d446618e42ba1112372",
+      "bytes": 377909,
+      "changed_chunks": [],
+      "relative_export_filenames": [],
+      "source_unchanged": true,
+      "geometry_graph_and_binary_payloads_unchanged": true,
+      "new_native_execution": false
+    },
+    {
+      "file": "f11-frame.ntop",
+      "source_sha256": "2d2bf3b15deb177ff3931edac97dceb5fd9ccfa766063506fcadcc137709f83e",
+      "published_sha256": "2d2bf3b15deb177ff3931edac97dceb5fd9ccfa766063506fcadcc137709f83e",
+      "bytes": 351944,
+      "changed_chunks": [],
+      "relative_export_filenames": [],
+      "source_unchanged": true,
+      "geometry_graph_and_binary_payloads_unchanged": true,
+      "new_native_execution": false
+    },
+    {
+      "file": "f12-frame.ntop",
+      "source_sha256": "e4e7a58b6d76540c4c6eb198b89ce9a39571f2239bccd50fcb1853bdb99b0dd6",
+      "published_sha256": "e4e7a58b6d76540c4c6eb198b89ce9a39571f2239bccd50fcb1853bdb99b0dd6",
+      "bytes": 317835,
+      "changed_chunks": [],
+      "relative_export_filenames": [],
+      "source_unchanged": true,
+      "geometry_graph_and_binary_payloads_unchanged": true,
+      "new_native_execution": false
+    },
+    {
+      "file": "forward-primary-bulkhead.ntop",
+      "source_sha256": "43ad0bbaf1f504ddd0c926a4ce5768ca913e33f5d8c90dfb293db046b3523e2e",
+      "published_sha256": "43ad0bbaf1f504ddd0c926a4ce5768ca913e33f5d8c90dfb293db046b3523e2e",
+      "bytes": 2818981,
+      "changed_chunks": [],
+      "relative_export_filenames": [],
+      "source_unchanged": true,
+      "geometry_graph_and_binary_payloads_unchanged": true,
+      "new_native_execution": false
+    }
+  ],
+  "cover_sha256": "58874785276db3b505494dca006bc41f958f511820e66b6f4ddc433be9da7f0d",
+  "source_commit": null
+}

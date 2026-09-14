@@ -1,0 +1,23 @@
+{
+  "id": "ddgx-construction-controls",
+  "type": "Notebook",
+  "title": "DDG(X) construction: guide-driven attachments",
+  "summary": "Explore independent hull and bridge controls with deck-driven attachments in a native ship construction study.",
+  "author": "bradrothenberg",
+  "org": "nTop",
+  "version": "0.1.0",
+  "ntopVersion": "6.0",
+  "license": "MIT",
+  "domain": "Aerospace",
+  "application": "Geometry",
+  "complexity": "Advanced",
+  "tags": [
+    "notebook-api",
+    "parametric",
+    "modeling",
+    "geometry"
+  ],
+  "preview": "geometry",
+  "coverImage": "cover.png",
+  "packageFile": "ddgx-construction-controls.ntop"
+}

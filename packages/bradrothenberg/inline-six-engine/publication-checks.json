@@ -1,0 +1,36 @@
+{
+  "scope": "Offline publication preparation; no new native execution",
+  "models": [
+    {
+      "file": "inline-six-engine.ntop",
+      "source_sha256": "782bbaf7753efc3a8a42b347cfd40d0ddd6a1192e4c76f8fe1e53c979b0a60ae",
+      "published_sha256": "4e4dd510218315c53191700f1d1f23435883d8710d7d4e7c33618157cdf21a3b",
+      "bytes": 2541244,
+      "changed_chunks": [
+        "index",
+        "open",
+        "sections"
+      ],
+      "relative_export_filenames": [
+        "piston.stl",
+        "connecting-rod.stl",
+        "crankshaft.stl",
+        "intake-valve.stl",
+        "exhaust-valve.stl",
+        "cam-lobe.stl",
+        "valve-spring.stl",
+        "intake-camshaft.stl",
+        "exhaust-camshaft.stl",
+        "cylinder-block.stl",
+        "cylinder-head.stl",
+        "bedplate.stl",
+        "oil-pan.stl"
+      ],
+      "source_unchanged": true,
+      "geometry_graph_and_binary_payloads_unchanged": true,
+      "new_native_execution": false
+    }
+  ],
+  "cover_sha256": "ff2a4cd636a406419162051effb2b7660239159230319e310597846c10ff6218",
+  "source_commit": "92f13bc0a873aacba62526ee43e9e6895ef051f8"
+}

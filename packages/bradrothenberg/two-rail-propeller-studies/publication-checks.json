@@ -1,0 +1,347 @@
+{
+  "source_commit": "92f13bc0a873aacba62526ee43e9e6895ef051f8",
+  "scope": "Offline saved-graph checks; recorded geometry is earlier native evidence",
+  "cases": [
+    {
+      "case": "elliptical_01_scimitar",
+      "sha256": "0898bbcbf95bd02bc6c4247a1161d9cf0cff188b88f035715ab5da853bbad3eb",
+      "offline_recipe_check": "passed",
+      "recorded_geometry": {
+        "triangles": 92314,
+        "vertices": 46157,
+        "watertight": true,
+        "components": 1,
+        "winding_consistent": true,
+        "swept_diameter_mm": 203.2130517141738,
+        "volume_mm3": 17504.339486466823,
+        "native_sweeps": 1,
+        "native_closed_curves": 0,
+        "sha256": "49d8f141fe055a1052060fdba54009e4f3a7363a8d051af2f0d39f381ec95c0a"
+      }
+    },
+    {
+      "case": "elliptical_02_gull_wing",
+      "sha256": "142ed890778acdd9154e2e9325d11ca9afa49803e2bea04e39c26b4e9a16351c",
+      "offline_recipe_check": "passed",
+      "recorded_geometry": {
+        "triangles": 105792,
+        "vertices": 52896,
+        "watertight": true,
+        "components": 1,
+        "winding_consistent": true,
+        "swept_diameter_mm": 203.2122259775505,
+        "volume_mm3": 16266.59694961204,
+        "native_sweeps": 1,
+        "native_closed_curves": 0,
+        "sha256": "f880abb552f5b6d12d4a7f18de2cd3d2770b4ec28e0dfba1ff73cfc81a061421"
+      }
+    },
+    {
+      "case": "elliptical_03_scalloped",
+      "sha256": "4244d87ca19a9261d61bcf68b25ba7332d7325e3275ac00c32f97c7d40f98dfd",
+      "offline_recipe_check": "passed",
+      "recorded_geometry": {
+        "triangles": 98506,
+        "vertices": 49253,
+        "watertight": true,
+        "components": 1,
+        "winding_consistent": true,
+        "swept_diameter_mm": 203.20582040538582,
+        "volume_mm3": 16267.401889761008,
+        "native_sweeps": 1,
+        "native_closed_curves": 0,
+        "sha256": "c15b6431f55ad21855eb38449768eac3f8454c0cd735211e01561ea7b6dae477"
+      }
+    },
+    {
+      "case": "elliptical_04_high_twist",
+      "sha256": "3820b698dbf2aecb85d67d9634f3970fedc964f38a61c555869070e2fd3e80aa",
+      "offline_recipe_check": "passed",
+      "recorded_geometry": {
+        "triangles": 110744,
+        "vertices": 55372,
+        "watertight": true,
+        "components": 1,
+        "winding_consistent": true,
+        "swept_diameter_mm": 203.21016140844202,
+        "volume_mm3": 8643.12943677282,
+        "native_sweeps": 1,
+        "native_closed_curves": 0,
+        "sha256": "fcef5bc4c906169765f6042a12f86043d8d2e4c55a83bac2a8a0a5fe34674596"
+      }
+    },
+    {
+      "case": "elliptical_05_round_mobius",
+      "sha256": "f8ab5d52d27b74fb6d189ebb0ad041c77e7346db586486e061c05b4667ff8282",
+      "offline_recipe_check": "passed",
+      "recorded_geometry": {
+        "triangles": 288124,
+        "vertices": 144058,
+        "watertight": true,
+        "components": 1,
+        "winding_consistent": true,
+        "swept_diameter_mm": 201.6152088139223,
+        "volume_mm3": 37932.986194858786,
+        "native_sweeps": 4,
+        "native_closed_curves": 0,
+        "sha256": "332cfa700db3da36dfbd63d24c58a88d569f5ce25aff62e8e031274bd5b2357e"
+      }
+    },
+    {
+      "case": "elliptical_06_elliptical_mobius",
+      "sha256": "27ecc36c14a40d2decf8d5bd4ef67745425f8c28758033b5224abdc0eaf5f1e4",
+      "offline_recipe_check": "passed",
+      "recorded_geometry": {
+        "triangles": 252784,
+        "vertices": 126388,
+        "watertight": true,
+        "components": 1,
+        "winding_consistent": true,
+        "swept_diameter_mm": 197.05879171039845,
+        "volume_mm3": 19101.234420093475,
+        "native_sweeps": 4,
+        "native_closed_curves": 0,
+        "sha256": "079cab4f0f5a9d351bed02bf0ecf0d38db28f5159f7590b25528d1e33872dbab"
+      }
+    },
+    {
+      "case": "elliptical_07_three_petal",
+      "sha256": "14b8fbee021bc92022fc37b27f7e82f329fc1c8f5d1bddf7b57f217503f06716",
+      "offline_recipe_check": "passed",
+      "recorded_geometry": {
+        "triangles": 287910,
+        "vertices": 143949,
+        "watertight": true,
+        "components": 1,
+        "winding_consistent": true,
+        "swept_diameter_mm": 202.8078518159272,
+        "volume_mm3": 65562.36427069877,
+        "native_sweeps": 1,
+        "native_closed_curves": 3,
+        "sha256": "48621b9bb2ed754443e15a6124c87d38482f1ee5a4772e894c8e5edae8328083"
+      }
+    },
+    {
+      "case": "elliptical_08_four_petal",
+      "sha256": "b614eba8703f9db1d6c6cfd8650fee533db818b4646a842b2181025e831b3943",
+      "offline_recipe_check": "passed",
+      "recorded_geometry": {
+        "triangles": 448396,
+        "vertices": 224186,
+        "watertight": true,
+        "components": 1,
+        "winding_consistent": true,
+        "swept_diameter_mm": 203.2176018055985,
+        "volume_mm3": 76044.9365743192,
+        "native_sweeps": 1,
+        "native_closed_curves": 3,
+        "sha256": "c5fe9d13a76c1dab2daa4329a0508beec6b431580f932a6a1ba4ef6bb5cdd427"
+      }
+    },
+    {
+      "case": "elliptical_09_three_loop",
+      "sha256": "bd73ce137194f932d27b5623fe9e9f45bb0947ca4ea4472e425098a531436434",
+      "offline_recipe_check": "passed",
+      "recorded_geometry": {
+        "triangles": 286966,
+        "vertices": 143477,
+        "watertight": true,
+        "components": 1,
+        "winding_consistent": true,
+        "swept_diameter_mm": 203.214144161154,
+        "volume_mm3": 29170.07780148998,
+        "native_sweeps": 1,
+        "native_closed_curves": 3,
+        "sha256": "39dd15e3e34c701f723e7b060b17d54789f68871097cbe320052bb7363f0fd47"
+      }
+    },
+    {
+      "case": "elliptical_10_folded_loop",
+      "sha256": "7650b97265f7e37bf85aa22fb22c0f025f48c1292776aa1131e3791961ee24f1",
+      "offline_recipe_check": "passed",
+      "recorded_geometry": {
+        "triangles": 259756,
+        "vertices": 129872,
+        "watertight": true,
+        "components": 1,
+        "winding_consistent": true,
+        "swept_diameter_mm": 202.80037832687842,
+        "volume_mm3": 72964.0574434026,
+        "native_sweeps": 1,
+        "native_closed_curves": 3,
+        "sha256": "0e39632b6f25ebda23c8475272b66c5593fc3ec2edffec3cccc7fa5b8294bdc9"
+      }
+    },
+    {
+      "case": "airfoil_01_scimitar",
+      "sha256": "b83ed1238bb954b139689e6c6cceea5f644e1361084ddab6b464ad2df9c97e3e",
+      "offline_recipe_check": "passed",
+      "recorded_geometry": {
+        "triangles": 280690,
+        "vertices": 140131,
+        "watertight": true,
+        "components": 1,
+        "winding_consistent": true,
+        "swept_diameter_mm": 203.21396915433948,
+        "volume_mm3": 12500.359868347836,
+        "native_sweeps": 1,
+        "native_closed_curves": 0,
+        "sha256": "fe1b10612ce381f098035ec24447a784fa81a7a0f322f96340503af8e15220f7"
+      }
+    },
+    {
+      "case": "airfoil_02_gull_wing",
+      "sha256": "d605456261cea06b890a38d6549558d25a1a324c26d683628e2c31d19b748936",
+      "offline_recipe_check": "passed",
+      "recorded_geometry": {
+        "triangles": 309498,
+        "vertices": 154389,
+        "watertight": true,
+        "components": 1,
+        "winding_consistent": true,
+        "swept_diameter_mm": 203.25271081493293,
+        "volume_mm3": 11683.113256306367,
+        "native_sweeps": 1,
+        "native_closed_curves": 0,
+        "sha256": "289a3efd6a19a7eaaace34aebc96f1419ff706ea9bb4f0c6f96af832bb08eabe"
+      }
+    },
+    {
+      "case": "airfoil_03_scalloped",
+      "sha256": "f179fda79b9a31f334be5b348bb895d781b95867afaa7ad9f6584d8ae430d012",
+      "offline_recipe_check": "passed",
+      "recorded_geometry": {
+        "triangles": 292702,
+        "vertices": 146033,
+        "watertight": true,
+        "components": 1,
+        "winding_consistent": true,
+        "swept_diameter_mm": 203.22555767195948,
+        "volume_mm3": 11595.877387409777,
+        "native_sweeps": 1,
+        "native_closed_curves": 0,
+        "sha256": "1ef7d1a433f0995ad4a5ff6cfdd17502d32a5bca683479294f1f7b92fe1940b4"
+      }
+    },
+    {
+      "case": "airfoil_04_high_twist",
+      "sha256": "3c1ece429cdbe0252232d4dfe6188ec671cba80cc8efe8902f464f82257b0aa5",
+      "offline_recipe_check": "passed",
+      "recorded_geometry": {
+        "triangles": 338294,
+        "vertices": 168207,
+        "watertight": true,
+        "components": 1,
+        "winding_consistent": true,
+        "swept_diameter_mm": 203.26021825213363,
+        "volume_mm3": 6603.056828987986,
+        "native_sweeps": 1,
+        "native_closed_curves": 0,
+        "sha256": "ea21a454756f346daee70fadd554a29b4c22f173fd7feab6389675e8c221444e"
+      }
+    },
+    {
+      "case": "airfoil_05_round_mobius",
+      "sha256": "27b030262400e11c348f74312904a5b5cbfffd98cdcface4dabe660357e315fc",
+      "offline_recipe_check": "passed",
+      "recorded_geometry": {
+        "triangles": 374114,
+        "vertices": 187053,
+        "watertight": true,
+        "components": 1,
+        "winding_consistent": true,
+        "swept_diameter_mm": 201.6089079742115,
+        "volume_mm3": 35251.20561684151,
+        "native_sweeps": 4,
+        "native_closed_curves": 0,
+        "sha256": "65f3f836ef377955086bec91ad300c2b0ac583dac3f5bd6eec697ebacecf3022"
+      }
+    },
+    {
+      "case": "airfoil_06_elliptical_mobius",
+      "sha256": "99f018d099cdc1b88eda018fef9ef0378d5e29702385e8cd2e5fd8b11ebd7027",
+      "offline_recipe_check": "passed",
+      "recorded_geometry": {
+        "triangles": 337300,
+        "vertices": 168646,
+        "watertight": true,
+        "components": 1,
+        "winding_consistent": true,
+        "swept_diameter_mm": 197.0545542252832,
+        "volume_mm3": 17749.722381782038,
+        "native_sweeps": 4,
+        "native_closed_curves": 0,
+        "sha256": "deb47d9852ff3fb0a96fad213c97124e1b015b3d6bc1235788608e0bda83bcdd"
+      }
+    },
+    {
+      "case": "airfoil_07_three_petal",
+      "sha256": "e551dfad29534987ac580bab5ebd2f4afbaa499c32fecaf4da23ec132dbc2a91",
+      "offline_recipe_check": "passed",
+      "recorded_geometry": {
+        "triangles": 891970,
+        "vertices": 444991,
+        "watertight": true,
+        "components": 1,
+        "winding_consistent": true,
+        "swept_diameter_mm": 202.86085253513866,
+        "volume_mm3": 45091.98489536116,
+        "native_sweeps": 1,
+        "native_closed_curves": 3,
+        "sha256": "5ee8dc2bde4eea4b370ab6d0d47bff684aa6e04081da6996ac8b0e95d319c9f3"
+      }
+    },
+    {
+      "case": "airfoil_08_four_petal",
+      "sha256": "0af83d01f81fba6356831f464ee9e16ab2ec1cdf2f7cd5a91a541912b4f4d9dc",
+      "offline_recipe_check": "passed",
+      "recorded_geometry": {
+        "triangles": 1384774,
+        "vertices": 689599,
+        "watertight": true,
+        "components": 1,
+        "winding_consistent": true,
+        "swept_diameter_mm": 203.2159389009622,
+        "volume_mm3": 51705.923455030985,
+        "native_sweeps": 1,
+        "native_closed_curves": 3,
+        "sha256": "48a24dede0a623aa0c09c92343cddda49a1cd2b2b83db49d8352466a013a674f"
+      }
+    },
+    {
+      "case": "airfoil_09_three_loop",
+      "sha256": "dc346152c979112a2dbdaab7bd0e46c8c7655330d30ff4ee5a9f966405baf2e8",
+      "offline_recipe_check": "passed",
+      "recorded_geometry": {
+        "triangles": 976618,
+        "vertices": 486269,
+        "watertight": true,
+        "components": 1,
+        "winding_consistent": true,
+        "swept_diameter_mm": 203.21448733367035,
+        "volume_mm3": 20501.10868768125,
+        "native_sweeps": 1,
+        "native_closed_curves": 3,
+        "sha256": "3ad6f7ce3d7dc8c87400d4ec2d73339a9b5d53182197bd5ccc3f23765dde755d"
+      }
+    },
+    {
+      "case": "airfoil_10_folded_loop",
+      "sha256": "57c92546cad9d7edc821a8bfd64a9a5614edd5b974a3e800843a1a69e9d638a8",
+      "offline_recipe_check": "passed",
+      "recorded_geometry": {
+        "triangles": 420814,
+        "vertices": 210401,
+        "watertight": true,
+        "components": 1,
+        "winding_consistent": true,
+        "swept_diameter_mm": 202.4738848875193,
+        "volume_mm3": 54307.16198310631,
+        "native_sweeps": 2,
+        "native_closed_curves": 0,
+        "sha256": "d27892f97149e208f0a8f45b7440aa627da9ce3338d4b9067b28385b5af61786"
+      }
+    }
+  ],
+  "cover_sha256": "45f14ce5c992858b4a65a31f9a63089d26baea2505899350d9d01b9795f3455b"
+}

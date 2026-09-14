@@ -1,0 +1,34 @@
+{
+  "scope": "Offline publication preparation; no new native execution",
+  "models": [
+    {
+      "file": "fcat-tail-and-cargo-pod.ntop",
+      "source_sha256": "ab5d38bf12bb2bb0991863410afed4c4fc4be493c202765457ae8a17c9409221",
+      "published_sha256": "ab5d38bf12bb2bb0991863410afed4c4fc4be493c202765457ae8a17c9409221",
+      "bytes": 1547456,
+      "changed_chunks": [],
+      "relative_export_filenames": [],
+      "source_unchanged": true,
+      "geometry_graph_and_binary_payloads_unchanged": true,
+      "new_native_execution": false
+    },
+    {
+      "file": "meshing.ntop",
+      "source_sha256": "66bb6518c9a4242b3e8c25bd3904f170834ed1bfa656c8f3aaf518383a82c325",
+      "published_sha256": "33aea184e75fe1c466a9a179b3efe6c3e68134e5c0aacd254d124b2a8160c60c",
+      "bytes": 1556250,
+      "changed_chunks": [
+        "index"
+      ],
+      "relative_export_filenames": [
+        "f-cat-gui-at-raw-m.stl",
+        "f-cat-gui-at-sharpened-m.stl"
+      ],
+      "source_unchanged": true,
+      "geometry_graph_and_binary_payloads_unchanged": true,
+      "new_native_execution": false
+    }
+  ],
+  "cover_sha256": "195352848863aa1f2aa07c8ac69435567a3e430ad548204a54cecc6d609fae94",
+  "source_commit": "92f13bc0a873aacba62526ee43e9e6895ef051f8"
+}

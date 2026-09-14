@@ -1,0 +1,42 @@
+{
+  "scope": "Offline publication preparation; no new native execution",
+  "models": [
+    {
+      "file": "jet20-engine-study.ntop",
+      "source_sha256": "0cb163f5aa0d4be20acc77c7309f9d867e7528c43aaf8e1143033f2e240b5912",
+      "published_sha256": "0cb163f5aa0d4be20acc77c7309f9d867e7528c43aaf8e1143033f2e240b5912",
+      "bytes": 5410568,
+      "changed_chunks": [],
+      "relative_export_filenames": [],
+      "source_unchanged": true,
+      "geometry_graph_and_binary_payloads_unchanged": true,
+      "new_native_execution": false
+    },
+    {
+      "file": "inspection.ntop",
+      "source_sha256": "247a1785e4575d80a0453609325bface1a3f61b451d7ed49fb7f145f699af336",
+      "published_sha256": "f6577636034603181ffa6566eb2d59d1534e3f94429a03c853481897e48cac85",
+      "bytes": 5418561,
+      "changed_chunks": [
+        "open"
+      ],
+      "relative_export_filenames": [],
+      "source_unchanged": true,
+      "geometry_graph_and_binary_payloads_unchanged": true,
+      "new_native_execution": false
+    },
+    {
+      "file": "exploded.ntop",
+      "source_sha256": "6054856f925c99b6bcb4c91c27b3f4e50c0566d607eb4b935f69e30722149f23",
+      "published_sha256": "6054856f925c99b6bcb4c91c27b3f4e50c0566d607eb4b935f69e30722149f23",
+      "bytes": 5655478,
+      "changed_chunks": [],
+      "relative_export_filenames": [],
+      "source_unchanged": true,
+      "geometry_graph_and_binary_payloads_unchanged": true,
+      "new_native_execution": false
+    }
+  ],
+  "cover_sha256": "946f0feb13152327d187c03cfbc9a992da98079c36360e6c95cad41800aa66dd",
+  "source_commit": "92f13bc0a873aacba62526ee43e9e6895ef051f8"
+}

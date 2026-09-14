@@ -1,0 +1,23 @@
+{
+  "id": "inline-six-astra",
+  "type": "Bundle",
+  "title": "Inline-six Astra: gears, belts, and service routes",
+  "summary": "Inspect a native inline-six assembly with involute gears, nominal fasteners, belts, spline routes, and mechanism checks.",
+  "author": "bradrothenberg",
+  "org": "nTop",
+  "version": "0.1.0",
+  "ntopVersion": "6.0",
+  "license": "MIT",
+  "domain": "Mechanical",
+  "application": "Geometry",
+  "complexity": "Advanced",
+  "tags": [
+    "notebook-api",
+    "parametric",
+    "modeling",
+    "geometry"
+  ],
+  "preview": "geometry",
+  "coverImage": "cover.png",
+  "packageFile": "inline-six-astra.ntop"
+}

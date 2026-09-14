@@ -1,0 +1,40 @@
+{
+  "scope": "Offline publication preparation; no new native execution",
+  "models": [
+    {
+      "file": "propeller-eight-inch.ntop",
+      "source_sha256": "6a5845a78ce3bd5855a6c24c6eb09b85b40b97d85cb4e2c5d78ea560893821b8",
+      "published_sha256": "5256ae8acfde07c6192b10fdb333940eb4593e32b47d1b989b755e083168b5c6",
+      "bytes": 21689386,
+      "changed_chunks": [
+        "index"
+      ],
+      "relative_export_filenames": [
+        "spinner-adapter-nut.stl",
+        "retaining-screw-reference.stl",
+        "propeller.stl",
+        "spinner.stl"
+      ],
+      "source_unchanged": true,
+      "geometry_graph_and_binary_payloads_unchanged": true,
+      "new_native_execution": false
+    },
+    {
+      "file": "spinner.ntop",
+      "source_sha256": "9511d6de2649c8905b3b543d9bbd495b11713f99b4c2910b9a1f5a908f8725d7",
+      "published_sha256": "5256d6f77802aa7bed1b6241212850c249b1b66c5f2d719915861e239366e5b1",
+      "bytes": 4597443,
+      "changed_chunks": [
+        "index"
+      ],
+      "relative_export_filenames": [
+        "spinner.stl"
+      ],
+      "source_unchanged": true,
+      "geometry_graph_and_binary_payloads_unchanged": true,
+      "new_native_execution": false
+    }
+  ],
+  "cover_sha256": "4c64b9b63e664a665de9587da2e79e39da272dc6a2308f3dad0c759f120f40eb",
+  "source_commit": "92f13bc0a873aacba62526ee43e9e6895ef051f8"
+}

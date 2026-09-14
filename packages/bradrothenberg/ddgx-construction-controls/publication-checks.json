@@ -1,0 +1,20 @@
+{
+  "scope": "Offline publication preparation; no new native execution",
+  "models": [
+    {
+      "file": "ddgx-construction-controls.ntop",
+      "source_sha256": "5ee3924ec36cc4421b59e1166c2bb58094704693e1a3a94a9cc9f9a9cc0a1b5f",
+      "published_sha256": "2ba95d86eb93b3ea3118fd9ff210fab97fa8f1a10149e9d4ee2b425a6e5ff583",
+      "bytes": 6794939,
+      "changed_chunks": [
+        "sections"
+      ],
+      "relative_export_filenames": [],
+      "source_unchanged": true,
+      "geometry_graph_and_binary_payloads_unchanged": true,
+      "new_native_execution": false
+    }
+  ],
+  "cover_sha256": "09f888db5634cb41952bb6878da730980ad4dd15a288979cbbc758dd5fe9dffe",
+  "source_commit": null
+}

@@ -1,0 +1,23 @@
+{
+  "id": "a12-cockpit-lofts-r33",
+  "type": "Notebook",
+  "title": "A-12 R33: independent lofts and cockpit study",
+  "summary": "Explore independent section surfaces, fair guides, and an integrated cockpit in an editable native A-12 appearance study.",
+  "author": "bradrothenberg",
+  "org": "nTop",
+  "version": "0.1.0",
+  "ntopVersion": "6.0",
+  "license": "MIT",
+  "domain": "Aerospace",
+  "application": "Geometry",
+  "complexity": "Advanced",
+  "tags": [
+    "notebook-api",
+    "parametric",
+    "modeling",
+    "geometry"
+  ],
+  "preview": "geometry",
+  "coverImage": "cover.png",
+  "packageFile": "a12-cockpit-lofts-r33.ntop"
+}

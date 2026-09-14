@@ -1,0 +1,23 @@
+{
+  "id": "ddgx-concept-exterior",
+  "type": "Notebook",
+  "title": "DDG(X) concept: native exterior loft study",
+  "summary": "Explore a normalized public-concept exterior through an editable hull loft, superstructure, and display features.",
+  "author": "bradrothenberg",
+  "org": "nTop",
+  "version": "0.1.0",
+  "ntopVersion": "6.0",
+  "license": "MIT",
+  "domain": "Aerospace",
+  "application": "Geometry",
+  "complexity": "Advanced",
+  "tags": [
+    "notebook-api",
+    "parametric",
+    "modeling",
+    "geometry"
+  ],
+  "preview": "geometry",
+  "coverImage": "cover.png",
+  "packageFile": "ddgx-concept-exterior.ntop"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "inline-six-engine",
+  "type": "Notebook",
+  "title": "Inline-six engine: editable mechanism study",
+  "summary": "Explore slider-crank kinematics, cam-driven valves, and analytic helical springs in an editable native inline-six engine.",
+  "author": "bradrothenberg",
+  "org": "nTop",
+  "version": "0.1.0",
+  "ntopVersion": "6.0",
+  "license": "MIT",
+  "domain": "Mechanical",
+  "application": "Geometry",
+  "complexity": "Advanced",
+  "tags": [
+    "notebook-api",
+    "parametric",
+    "modeling",
+    "geometry"
+  ],
+  "preview": "geometry",
+  "coverImage": "cover.png",
+  "packageFile": "inline-six-engine.ntop"
+}

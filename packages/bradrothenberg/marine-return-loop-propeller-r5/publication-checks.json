@@ -1,0 +1,30 @@
+{
+  "scope": "Offline publication preparation; no new native execution",
+  "models": [
+    {
+      "file": "marine-return-loop-propeller-r5.ntop",
+      "source_sha256": "0059dbc98f27380ad798654af29242df71b8434b4c5957a762963b5d1077d948",
+      "published_sha256": "5865fee2ffb0d2cf7c665217229d2faa7f19c87ef71f945d3304bcd6a1948c9a",
+      "bytes": 119165045,
+      "changed_chunks": [
+        "index"
+      ],
+      "relative_export_filenames": [
+        "marine-prop-r4-aft-cap.stl",
+        "marine-prop-r4-spline-cartridge.stl",
+        "marine-prop-r4-reference-shaft.stl",
+        "marine-prop-r4-thrust-washer.stl",
+        "marine-prop-r4-shaft-retainer.stl",
+        "marine-prop-r4-retainer-lock-bolt.stl",
+        "marine-prop-r4-retainer-lock-nut.stl",
+        "marine-prop-r4-cap-screw-reference.stl",
+        "marine-prop-r5.stl"
+      ],
+      "source_unchanged": true,
+      "geometry_graph_and_binary_payloads_unchanged": true,
+      "new_native_execution": false
+    }
+  ],
+  "cover_sha256": "505d3a0ee54439f26af63f2093881d5897da61e061c91087a9faac88561246f9",
+  "source_commit": null
+}

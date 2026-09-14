@@ -1,0 +1,33 @@
+{
+  "scope": "Offline publication preparation; no new native execution",
+  "models": [
+    {
+      "file": "inline-six-astra.ntop",
+      "source_sha256": "e2347b8ddb7f41e005f9892577dd36d8c58a755f937bb4672d83c8b680e72f48",
+      "published_sha256": "86e97788fdd5dd8f065526ccc458452c7a56ce67c90f73601ea5e1e13a493df0",
+      "bytes": 9875960,
+      "changed_chunks": [
+        "open"
+      ],
+      "relative_export_filenames": [],
+      "source_unchanged": true,
+      "geometry_graph_and_binary_payloads_unchanged": true,
+      "new_native_execution": false
+    },
+    {
+      "file": "inspection.ntop",
+      "source_sha256": "ba894abb8a9bd4fc39737a02fa90dd8c8a1c34fb50e1e5e0286fd4d68dba57c1",
+      "published_sha256": "b770b85fd1f3402073b6bddbd1deda1269451429970b214e1bf47ea86c2fe82c",
+      "bytes": 9876731,
+      "changed_chunks": [
+        "open"
+      ],
+      "relative_export_filenames": [],
+      "source_unchanged": true,
+      "geometry_graph_and_binary_payloads_unchanged": true,
+      "new_native_execution": false
+    }
+  ],
+  "cover_sha256": "fd6baf5546672bebc41b8797843bfa779bc59ec9afb720dd93d81a749e1bfd8f",
+  "source_commit": "92f13bc0a873aacba62526ee43e9e6895ef051f8"
+}

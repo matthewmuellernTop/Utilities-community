@@ -1,0 +1,23 @@
+{
+  "id": "f16-fair-airfoils-r6",
+  "type": "Notebook",
+  "title": "F-16 R6: fair airfoils and finite trailing edges",
+  "summary": "Inspect the R6 aircraft appearance study with fair airfoils, revised aft-fuselage guides, and finite trailing edges.",
+  "author": "bradrothenberg",
+  "org": "nTop",
+  "version": "0.1.0",
+  "ntopVersion": "6.0",
+  "license": "MIT",
+  "domain": "Aerospace",
+  "application": "Geometry",
+  "complexity": "Advanced",
+  "tags": [
+    "notebook-api",
+    "parametric",
+    "modeling",
+    "geometry"
+  ],
+  "preview": "geometry",
+  "coverImage": "cover.png",
+  "packageFile": "f16-fair-airfoils-r6.ntop"
+}

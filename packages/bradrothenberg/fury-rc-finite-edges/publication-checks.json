@@ -1,0 +1,62 @@
+{
+  "scope": "Offline publication preparation; no new native execution",
+  "models": [
+    {
+      "file": "fury-rc-finite-edges.ntop",
+      "source_sha256": "0eb08baf8489622bdacc96d76690b2905ba3e64adacf95811869be555f2f2713",
+      "published_sha256": "e64394104adc30cce58a01adcdc88eb8caec4f58c9cdffcf57ef6c98c120a800",
+      "bytes": 1927774,
+      "changed_chunks": [
+        "index"
+      ],
+      "relative_export_filenames": [
+        "raw-mm.stl",
+        "sharpened-mm.stl"
+      ],
+      "source_unchanged": true,
+      "geometry_graph_and_binary_payloads_unchanged": true,
+      "new_native_execution": false
+    },
+    {
+      "file": "earlier-appearance.ntop",
+      "source_sha256": "0dbdebdb7051f48fc9d3b497caad8638dbfeb0fb51b5cc92809bd65215ee5829",
+      "published_sha256": "ecf90e2b02da8d9de250a7ed7fd925e8bbe200c8eb40dba22a50ab23230d7ea6",
+      "bytes": 2404939,
+      "changed_chunks": [
+        "sections"
+      ],
+      "relative_export_filenames": [],
+      "source_unchanged": true,
+      "geometry_graph_and_binary_payloads_unchanged": true,
+      "new_native_execution": false
+    },
+    {
+      "file": "earlier-internal-layout.ntop",
+      "source_sha256": "85fe066cdc5be3533f03241efbe6f1b6d6ddc0dce54ddd572e7f80b325979a62",
+      "published_sha256": "f474b9364311913266c9dd616c4ba38404207f5172853dbbf4ab8a50869d9495",
+      "bytes": 2404328,
+      "changed_chunks": [
+        "sections"
+      ],
+      "relative_export_filenames": [],
+      "source_unchanged": true,
+      "geometry_graph_and_binary_payloads_unchanged": true,
+      "new_native_execution": false
+    },
+    {
+      "file": "earlier-gear-illustration.ntop",
+      "source_sha256": "be442ddfb3b72aa26e07bb4b170153eeff673829c9c6a48bb500ba84b3773a05",
+      "published_sha256": "d8554020a159ff6fd0a0210aaec40ad3b9829cbfb1e1df2a2893535c05bf7225",
+      "bytes": 2404089,
+      "changed_chunks": [
+        "sections"
+      ],
+      "relative_export_filenames": [],
+      "source_unchanged": true,
+      "geometry_graph_and_binary_payloads_unchanged": true,
+      "new_native_execution": false
+    }
+  ],
+  "cover_sha256": "73cf4c3a4241b8bb803ec86d50be9c6543a3a0807b0c044b3802d3fcc8be1f2d",
+  "source_commit": "92f13bc0a873aacba62526ee43e9e6895ef051f8"
+}

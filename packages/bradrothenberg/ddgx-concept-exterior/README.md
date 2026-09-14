@@ -1,5 +1,7 @@
 # DDG(X) concept: native exterior loft study
 
+**Built with Astra.**
+
 Explore a normalized public-concept exterior through an editable hull loft, superstructure, and display features.
 
 ![DDG(X) concept: native exterior loft study](cover.png)

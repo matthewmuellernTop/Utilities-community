@@ -1,5 +1,7 @@
 # Marine R5: return-loop propeller and drive
 
+**Built with Astra.**
+
 Inspect continuous leading-edge return loops, independent root trims, a finished aft shoulder, and separate ogive and drive components.
 
 ![Marine R5: return-loop propeller and drive](cover.png)

@@ -1,5 +1,7 @@
 # DDG(X) construction: guide-driven attachments
 
+**Built with Astra.**
+
 Explore independent hull and bridge controls with deck-driven attachments in a native ship construction study.
 
 ![DDG(X) construction: guide-driven attachments](cover.png)

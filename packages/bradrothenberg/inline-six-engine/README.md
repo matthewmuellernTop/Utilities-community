@@ -1,5 +1,7 @@
 # Inline-six engine: editable mechanism study
 
+**Built with Astra.**
+
 Explore slider-crank kinematics, cam-driven valves, and analytic helical springs in an editable native inline-six engine.
 
 ![Inline-six engine: editable mechanism study](cover.png)

@@ -1,5 +1,7 @@
 # F-117 R15: editable planar exterior
 
+**Built with Astra.**
+
 Study native planar solids and integrated inlet transitions in an editable F-117 appearance reconstruction.
 
 ![F-117 R15: editable planar exterior](cover.png)

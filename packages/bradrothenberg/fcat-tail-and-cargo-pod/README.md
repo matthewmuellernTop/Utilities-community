@@ -1,5 +1,7 @@
 # F-Cat: continuous tail and cargo-pod fairing
 
+**Built with Astra.**
+
 Inspect an editable twin-boom aircraft with a continuous bent tail, cargo-pod fairing, chine, wheels, and a separate meshing presentation.
 
 ![F-Cat: continuous tail and cargo-pod fairing](cover.png)

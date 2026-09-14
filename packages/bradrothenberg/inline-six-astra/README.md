@@ -1,5 +1,7 @@
 # Inline-six Astra: gears, belts, and service routes
 
+**Built with Astra.**
+
 Inspect a native inline-six assembly with involute gears, nominal fasteners, belts, spline routes, and mechanism checks.
 
 ![Inline-six Astra: gears, belts, and service routes](cover.png)

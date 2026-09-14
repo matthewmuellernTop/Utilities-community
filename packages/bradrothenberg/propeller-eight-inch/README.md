@@ -1,5 +1,7 @@
 # Eight-inch propeller and retained spinner
 
+**Built with Astra.**
+
 Explore an editable propeller assembly with a separate spinner, motor reference, and nominal retention hardware.
 
 ![Eight-inch propeller and retained spinner](cover.png)

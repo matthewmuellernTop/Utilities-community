@@ -1,5 +1,7 @@
 # Jet20: editable small turbojet assembly
 
+**Built with Astra.**
+
 Explore an editable compressor, combustor, turbine, housings, nominal fasteners, and service routes around a conditional 20 lbf sizing target.
 
 ![Jet20: editable small turbojet assembly](cover.jpg)

@@ -1,5 +1,7 @@
 # Aircraft bulkheads E: conformal pockets and hat passages
 
+**Built with Astra.**
+
 Explore twelve native station parts with conformal pockets, floor blends, and revised passages for hat longerons.
 
 ![Aircraft bulkheads E: conformal pockets and hat passages](cover.png)

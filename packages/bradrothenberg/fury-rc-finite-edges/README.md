@@ -1,5 +1,7 @@
 # Fury RC: finite trailing-edge geometry
 
+**Built with Astra.**
+
 Inspect the native Fury RC appearance study with finite trailing edges, editable loft guides, and retained mesh-readiness lessons.
 
 ![Fury RC: finite trailing-edge geometry](cover.png)

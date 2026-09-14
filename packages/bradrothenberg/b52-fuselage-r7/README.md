@@ -1,5 +1,7 @@
 # B52 fuselage R7: fair nose and cockpit loft
 
+**Built with Astra.**
+
 Study an editable native fuselage with a fair nose blend and accepted cockpit loft, derived from the GPL-2.0 B-52F artist model.
 
 ![B52 fuselage R7: fair nose and cockpit loft](cover.png)

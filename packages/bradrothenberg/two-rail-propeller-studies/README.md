@@ -1,5 +1,7 @@
 # Two-rail propeller studies: twenty editable graphs
 
+**Built with Astra.**
+
 Ten original blade forms and ten later airfoil candidates demonstrate two-rail sweeps, changing section frames, and closed loops.
 
 ![Recorded native three-petal airfoil study](cover.png)

@@ -1,5 +1,7 @@
 # F-16 R6: fair airfoils and finite trailing edges
 
+**Built with Astra.**
+
 Inspect the R6 aircraft appearance study with fair airfoils, revised aft-fuselage guides, and finite trailing edges.
 
 ![F-16 R6: fair airfoils and finite trailing edges](cover.png)

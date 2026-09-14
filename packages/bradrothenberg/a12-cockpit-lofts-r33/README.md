@@ -1,5 +1,7 @@
 # A-12 R33: independent lofts and cockpit study
 
+**Built with Astra.**
+
 Explore independent section surfaces, fair guides, and an integrated cockpit in an editable native A-12 appearance study.
 
 ![A-12 R33: independent lofts and cockpit study](cover.png)

@@ -1,0 +1,23 @@
+{
+  "id": "b52-fuselage-r7",
+  "type": "Notebook",
+  "title": "B52 fuselage R7: fair nose and cockpit loft",
+  "summary": "Study an editable native fuselage with a fair nose blend and accepted cockpit loft, derived from the GPL-2.0 B-52F artist model.",
+  "author": "bradrothenberg",
+  "org": "nTop",
+  "version": "0.1.0",
+  "ntopVersion": "6.0",
+  "license": "GPL-2.0",
+  "domain": "Aerospace",
+  "application": "Geometry",
+  "complexity": "Advanced",
+  "tags": [
+    "notebook-api",
+    "parametric",
+    "modeling",
+    "geometry"
+  ],
+  "preview": "geometry",
+  "coverImage": "cover.png",
+  "packageFile": "b52-fuselage-r7.ntop"
+}

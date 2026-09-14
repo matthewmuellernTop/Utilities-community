@@ -1,0 +1,18 @@
+{
+  "scope": "Offline publication preparation; no new native execution",
+  "models": [
+    {
+      "file": "b52-fuselage-r7.ntop",
+      "source_sha256": "90177520b17f02a1d2292a71c8456122097d3131ed0b446faf1c1d76d509fcc1",
+      "published_sha256": "90177520b17f02a1d2292a71c8456122097d3131ed0b446faf1c1d76d509fcc1",
+      "bytes": 2464798,
+      "changed_chunks": [],
+      "relative_export_filenames": [],
+      "source_unchanged": true,
+      "geometry_graph_and_binary_payloads_unchanged": true,
+      "new_native_execution": false
+    }
+  ],
+  "cover_sha256": "2fe12c27f44258ebbd85a4ce704b23a96ff755dddc5070c09f956d334dbe27ce",
+  "source_commit": "92f13bc0a873aacba62526ee43e9e6895ef051f8"
+}

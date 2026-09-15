@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "scope": "Offline publication checks; no new native execution",
+  "native_models": 74,
+  "source_reports": 8,
+  "report_catalogues": 1,
+  "geometry_function_chunks_preserved": 5911,
+  "native_container_roundtrips": true,
+  "revision_g_source_hashes_match_final_delivery": true,
+  "source_unchanged": true,
+  "content_findings": [],
+  "local_links_checked": 356,
+  "desktop_mobile_light_dark_page_checks": 36,
+  "keyboard_zoom_checks": 8,
+  "retained_figures_visually_reviewed": 82,
+  "excluded_reference_or_workstation_images": 9,
+  "notes": "All native files retain the hashes from the complete native-content audit. A final text/image audit covers the report and line-ending fixes. Local report links and images load without external assets."
+}

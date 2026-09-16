@@ -83,7 +83,7 @@ jobs:
           # Collect unique top-level package folders from the changed-files list,
           # e.g. "packages/foo/bar/manifest.json" -> "packages/foo/bar".
           packages=$(grep '^packages/' /tmp/sync/changed.txt \
-            | awk -F/ 'NF >= 3 {print $1"/"$2"/"$3}' | sort -u)
+            | awk -F/ '$2 == "_schema" {print $1"/"$2; next} NF >= 3 {print $1"/"$2"/"$3}' | sort -u)
           if [ -z "$packages" ]; then
             echo "No top-level package folders detected."
             exit 0

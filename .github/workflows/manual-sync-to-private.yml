@@ -1,12 +1,14 @@
 name: Manual sync to private repo
 
 # Manually triggered workflow that diffs packages/ between this community repo
-# and the private nTopology/Utilities repo, then pushes any new or changed
-# packages to a branch on the private repo and opens a follow-up PR there.
+# and the private nTopology/Utilities repo, then pushes any new, changed, or
+# removed packages to a branch on the private repo and opens a follow-up PR
+# there.
 #
-# Additive only: files are never deleted from the private repo. The private
-# repo may contain extra files (internal assets, test files) not present in
-# the community repo and those are left untouched.
+# Deletions only propagate for packages the private repo got from community
+# in the first place (manifest.json has "communitySource": true) - private-only
+# content (internal assets, test files) is left untouched even if it has no
+# community-side counterpart.
 #
 # Required secret on this repo:
 #   PRIVATE_REPO_TOKEN  - fine-grained PAT, repo access "nTopology/Utilities",
@@ -69,14 +71,41 @@ jobs:
           done
 
           if [ -z "$changed" ]; then
-            echo "No differences found between community and private. Nothing to sync."
-            echo "has_changes=false" >> "$GITHUB_OUTPUT"
+            : > /tmp/changed_packages.txt
           else
-            echo "has_changes=true" >> "$GITHUB_OUTPUT"
-            # Trim leading space and write to a file for the next step
             echo "$changed" | xargs -n1 > /tmp/changed_packages.txt
             echo "Packages to sync:"
             cat /tmp/changed_packages.txt
+          fi
+
+          # Packages present in private that no longer exist in community.
+          # Only ones private got from community originally (communitySource:
+          # true) are eligible - private-only content is never auto-deleted.
+          removed=""
+          for pkg_path in private/packages/*/*; do
+            [ -d "$pkg_path" ] || continue
+            rel="${pkg_path#private/}"
+            if [ -f "$pkg_path/manifest.json" ] \
+              && jq -e '.communitySource == true' "$pkg_path/manifest.json" >/dev/null 2>&1 \
+              && [ ! -d "community/$rel" ]; then
+              echo "Removed in community: $rel"
+              removed="$removed $rel"
+            fi
+          done
+
+          if [ -z "$removed" ]; then
+            : > /tmp/removed_packages.txt
+          else
+            echo "$removed" | xargs -n1 > /tmp/removed_packages.txt
+            echo "Packages to remove:"
+            cat /tmp/removed_packages.txt
+          fi
+
+          if [ -s /tmp/changed_packages.txt ] || [ -s /tmp/removed_packages.txt ]; then
+            echo "has_changes=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "No differences found between community and private. Nothing to sync."
+            echo "has_changes=false" >> "$GITHUB_OUTPUT"
           fi
 
       - name: Stop if nothing to sync
@@ -110,33 +139,67 @@ jobs:
           while IFS= read -r pkg; do
             [ -n "$pkg" ] || continue
             mkdir -p "$pkg"
-            rsync -av "../community/$pkg/" "$pkg/"
-            # Stamp communitySource so the private repo knows this package
-            # originated from the community repo (used for commit history link).
+
+            # featured/verified are private-repo-only controls; the community
+            # manifest never sets them. Preserve whatever's already there
+            # before rsync overwrites manifest.json wholesale.
+            PRESERVE="{}"
             if [ -f "$pkg/manifest.json" ]; then
-              jq '. + {"communitySource": true}' "$pkg/manifest.json" > /tmp/_manifest.json \
+              PRESERVE=$(jq -c '{featured, verified} | with_entries(select(.value != null))' "$pkg/manifest.json")
+            fi
+
+            rsync -av "../community/$pkg/" "$pkg/"
+
+            if [ -f "$pkg/manifest.json" ]; then
+              # Stamp communitySource so the private repo knows this package
+              # originated from the community repo (used for commit history link),
+              # and restore the preserved private-only fields.
+              jq --argjson preserve "$PRESERVE" '. + {"communitySource": true} + $preserve' \
+                "$pkg/manifest.json" > /tmp/_manifest.json \
                 && mv /tmp/_manifest.json "$pkg/manifest.json"
             fi
             git add "$pkg"
           done < /tmp/changed_packages.txt
+
+          while IFS= read -r pkg; do
+            [ -n "$pkg" ] || continue
+            echo "Removing package deleted from community: $pkg"
+            git rm -r --ignore-unmatch --quiet "$pkg"
+          done < /tmp/removed_packages.txt
 
           if git diff --cached --quiet; then
             echo "No effective changes after sync."
             exit 0
           fi
 
-          # Build commit message listing all synced packages
-          PKG_LIST=$(cat /tmp/changed_packages.txt | sed 's/^/  - /')
-          COMMIT_MSG="Manual sync from Utilities-community\n\nSynced packages:\n${PKG_LIST}\n\nTriggered by: ${ACTOR}"
+          # Build commit message listing all synced/removed packages
+          COMMIT_MSG="Manual sync from Utilities-community\n"
+          if [ -s /tmp/changed_packages.txt ]; then
+            PKG_LIST=$(sed 's/^/  - /' /tmp/changed_packages.txt)
+            COMMIT_MSG="${COMMIT_MSG}\nSynced packages:\n${PKG_LIST}\n"
+          fi
+          if [ -s /tmp/removed_packages.txt ]; then
+            REMOVED_LIST=$(sed 's/^/  - /' /tmp/removed_packages.txt)
+            COMMIT_MSG="${COMMIT_MSG}\nRemoved packages:\n${REMOVED_LIST}\n"
+          fi
+          COMMIT_MSG="${COMMIT_MSG}\nTriggered by: ${ACTOR}"
           git commit -m "$(printf '%b' "$COMMIT_MSG")"
 
           git push -u origin "$BRANCH" --force
 
           # Build PR body
-          PKG_BODY=$(cat /tmp/changed_packages.txt | sed 's/^/- /')
+          BODY="Manual sync from \`nTopology/Utilities-community\` triggered by @${ACTOR}."
+          if [ -s /tmp/changed_packages.txt ]; then
+            PKG_BODY=$(sed 's/^/- /' /tmp/changed_packages.txt)
+            BODY="${BODY}\n\n**Packages synced:**\n${PKG_BODY}"
+          fi
+          if [ -s /tmp/removed_packages.txt ]; then
+            REMOVED_BODY=$(sed 's/^/- /' /tmp/removed_packages.txt)
+            BODY="${BODY}\n\n**Packages removed:**\n${REMOVED_BODY}"
+          fi
           NOTES_LINE=""
           if [ -n "$NOTES" ]; then NOTES_LINE="\n\n**Notes:** ${NOTES}"; fi
-          BODY="Manual sync from \`nTopology/Utilities-community\` triggered by @${ACTOR}.\n\n**Packages synced:**\n${PKG_BODY}${NOTES_LINE}"
+          BODY="${BODY}${NOTES_LINE}"
 
           # Check if PR already exists for this branch
           EXISTING=$(gh pr list --repo nTopology/Utilities --head "$BRANCH" --json number --jq '.[0].number' || echo "")

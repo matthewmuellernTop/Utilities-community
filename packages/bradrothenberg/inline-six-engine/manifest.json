@@ -15,8 +15,10 @@
     "notebook-api",
     "parametric",
     "modeling",
-    "geometry"
+    "geometry",
+    "ai-assisted"
   ],
+  "aiModel": "GPT-6 Astra",
   "preview": "geometry",
   "coverImage": "cover.png",
   "packageFile": "inline-six-engine.ntop"

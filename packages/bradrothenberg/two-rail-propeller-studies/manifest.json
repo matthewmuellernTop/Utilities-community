@@ -16,8 +16,10 @@
     "two-rail",
     "sweep",
     "airfoil",
-    "propeller"
+    "propeller",
+    "ai-assisted"
   ],
+  "aiModel": "GPT-6 Astra",
   "preview": "geometry",
   "coverImage": "cover.png",
   "packageFile": "studies.json"

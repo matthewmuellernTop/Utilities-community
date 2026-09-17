@@ -57,6 +57,11 @@ jobs:
           ref: ${{ github.event.pull_request.merge_commit_sha }}
           path: community
           lfs: true
+          # Safe: this job only runs post-merge (see job-level `if` above), so
+          # merge_commit_sha is already part of protected `main`, not
+          # unreviewed fork code. actions/checkout's fork-checkout guard
+          # otherwise blocks any checkout in a pull_request_target workflow.
+          allow-unsafe-pr-checkout: true
 
       - name: Checkout private Utilities with PRIVATE_REPO_TOKEN
         if: steps.changes.outputs.has_packages == 'true'

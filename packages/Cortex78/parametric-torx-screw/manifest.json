@@ -1,0 +1,23 @@
+{
+  "id": "parametric-torx-screw",
+  "type": "Block",
+  "title": "Parametric Torx screw",
+  "summary": "A parametric Torx screw with list-driven batch placement, tangent-plane flush against a reference body, and paired detailed-screw and filled-mould outputs for Boolean subtraction.",
+  "author": "Cortex78",
+  "version": "2.0.0",
+  "ntopVersion": "6.1",
+  "license": "MIT",
+  "domain": "Mechanical",
+  "application": "Geometry",
+  "complexity": "Intermediate",
+  "tags": [
+    "torx",
+    "fasteners",
+    "parametric",
+    "ai-assisted"
+  ],
+  "preview": "geometry",
+  "coverImage": "cover.png",
+  "packageFile": "Torx.ntop",
+  "aiModel": "Claude Opus 5 [Extra]"
+}

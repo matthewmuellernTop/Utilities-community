@@ -104,8 +104,19 @@ jobs:
 
           # rsync each package folder community -> private. --delete handles
           # file removals inside the same package; we never touch other folders.
+          # If the package folder no longer exists in community at all (the
+          # whole package was deleted), remove it from private too.
           while IFS= read -r pkg; do
             [ -n "$pkg" ] || continue
+
+            if [ ! -d "../community/$pkg" ]; then
+              if [ -d "$pkg" ]; then
+                echo "Package removed in community, deleting from private: $pkg"
+                git rm -r --ignore-unmatch --quiet "$pkg"
+              fi
+              continue
+            fi
+
             mkdir -p "$pkg"
 
             # featured/verified are private-repo-only controls; the community

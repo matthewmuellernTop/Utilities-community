@@ -1,0 +1,18 @@
+{
+  "id": "fuselage-from-rails",
+  "type": "Notebook",
+  "title": "Fuselage from Rails",
+  "summary": "Create a fuselage from three rails using a conic section sweep by tangents, controlling rho values and close radii for tip and tail.",
+  "author": "matthewmuellernTop",
+  "version": "1.0.0",
+  "ntopVersion": "6.0+",
+  "license": "MIT",
+  "domain": "Aerospace",
+  "complexity": "Intermediate",
+  "tags": [
+    "Airplane",
+    "Fuselage",
+    "Sweep"
+  ],
+  "preview": "geometry"
+}

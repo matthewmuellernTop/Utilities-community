@@ -7,7 +7,7 @@ Create a point at the intersection of two lines on the same plane. If the lines 
 Clone this repo or copy the package folder into your nTop workspace:
 
 ```bash
-git clone https://github.com/nTopology/Utilities.git
+git clone https://github.com/nTopology/Utilities-community.git
 ```
 
 The package lives at `packages/DaveMakesStuff/point-at-intersection-of-two-lines/`.

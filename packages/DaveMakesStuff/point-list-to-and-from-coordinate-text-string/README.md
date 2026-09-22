@@ -9,7 +9,7 @@ These blocks can be used in conjunction with the "Text List" overload in the "Co
 Clone this repo or copy the package folder into your nTop workspace:
 
 ```bash
-git clone https://github.com/nTopology/Utilities.git
+git clone https://github.com/nTopology/Utilities-community.git
 ```
 
 The package lives at `packages/DaveMakesStuff/point-list-to-and-from-coordinate-text-string/`.

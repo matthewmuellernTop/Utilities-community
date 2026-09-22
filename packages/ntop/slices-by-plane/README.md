@@ -7,7 +7,7 @@ This Custom Block slices an implicit body into sections of equal widths based on
 Clone this repo or copy the package folder into your nTop workspace:
 
 ```bash
-git clone https://github.com/nTopology/Utilities.git
+git clone https://github.com/nTopology/Utilities-community.git
 ```
 
 The package lives at `packages/ntop/slices-by-plane/`.

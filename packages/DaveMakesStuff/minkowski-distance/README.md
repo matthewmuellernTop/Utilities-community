@@ -9,7 +9,7 @@ P=1 returns Manhattan distance, P=2 returns Euclidean distance, P=10+ returns Ch
 Clone this repo or copy the package folder into your nTop workspace:
 
 ```bash
-git clone https://github.com/nTopology/Utilities.git
+git clone https://github.com/nTopology/Utilities-community.git
 ```
 
 The package lives at `packages/DaveMakesStuff/minkowski-distance/`.

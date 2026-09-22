@@ -1,0 +1,25 @@
+{
+  "id": "jet20-engine-study",
+  "type": "Bundle",
+  "title": "Jet20: editable small turbojet assembly",
+  "summary": "Explore an editable compressor, combustor, turbine, housings, nominal fasteners, and service routes around a conditional 20 lbf sizing target.",
+  "author": "bradrothenberg",
+  "org": "nTop",
+  "version": "0.1.0",
+  "ntopVersion": "6.0",
+  "license": "MIT",
+  "domain": "Mechanical",
+  "application": "Geometry",
+  "complexity": "Advanced",
+  "tags": [
+    "notebook-api",
+    "parametric",
+    "modeling",
+    "geometry",
+    "ai-assisted"
+  ],
+  "aiModel": "GPT-6 Astra",
+  "preview": "geometry",
+  "coverImage": "cover.jpg",
+  "packageFile": "jet20-engine-study.ntop"
+}

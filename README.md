@@ -47,6 +47,12 @@ Every package must include a `manifest.json` at its root. Required fields:
 | `tags` | Array of lowercase search keywords | `["airfoil", "csv"]` |
 | `preview` | Preview type: `"geometry"` or `"bundle"` | `"geometry"` |
 
+Optional fields:
+
+| Field | Description | Example |
+|-------|-------------|---------|
+| `aiModel` | Name of the AI model used to help design/build this package, if any. Leave out if none was used. Setting this should also add the `ai-assisted` tag to `tags`, so AI-assisted packages can be filtered on the Browse page. | `"Astra"` |
+
 ## README.md
 
 Each package should include a `README.md` covering:

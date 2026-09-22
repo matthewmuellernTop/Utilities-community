@@ -7,7 +7,7 @@ This custom block will calculate the span in the U or V direction of a CAD Face.
 Clone this repo or copy the package folder into your nTop workspace:
 
 ```bash
-git clone https://github.com/nTopology/Utilities.git
+git clone https://github.com/nTopology/Utilities-community.git
 ```
 
 The package lives at `packages/ntop/uv-span/`.

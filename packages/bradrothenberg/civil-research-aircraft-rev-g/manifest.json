@@ -1,0 +1,26 @@
+{
+  "id": "civil-research-aircraft-rev-g",
+  "type": "Bundle",
+  "title": "Civil research aircraft: Revision G and design studies",
+  "summary": "Explore the Revision G native aircraft assembly, editable lug joints and station parts, and eight reports tracing the structural geometry and analysis studies.",
+  "author": "bradrothenberg",
+  "org": "nTop",
+  "version": "0.1.0",
+  "ntopVersion": "6.1",
+  "license": "MIT",
+  "domain": "Aerospace",
+  "application": "Geometry",
+  "complexity": "Advanced",
+  "tags": [
+    "aircraft",
+    "notebook-api",
+    "assembly",
+    "bulkheads",
+    "lug-joints",
+    "structural-study",
+    "astra"
+  ],
+  "preview": "geometry",
+  "coverImage": "cover.png",
+  "packageFile": "civil-research-aircraft-rev-g.ntop"
+}

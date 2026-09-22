@@ -1,0 +1,18 @@
+{
+  "scope": "Offline publication preparation; no new native execution",
+  "models": [
+    {
+      "file": "ddgx-concept-exterior.ntop",
+      "source_sha256": "a6e0a436cebf177e44bf48851db84463cdfc2d34d4c52e5edf223e51c0465a9b",
+      "published_sha256": "a6e0a436cebf177e44bf48851db84463cdfc2d34d4c52e5edf223e51c0465a9b",
+      "bytes": 1398732,
+      "changed_chunks": [],
+      "relative_export_filenames": [],
+      "source_unchanged": true,
+      "geometry_graph_and_binary_payloads_unchanged": true,
+      "new_native_execution": false
+    }
+  ],
+  "cover_sha256": "ea55164bcdc6f16e1a08774c2f0b75bb80045816385cdb2813833d0077d2fa8e",
+  "source_commit": "92f13bc0a873aacba62526ee43e9e6895ef051f8"
+}

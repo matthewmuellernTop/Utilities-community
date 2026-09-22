@@ -7,7 +7,7 @@ Trim a curve at a point with option to select which side to keep.
 Clone this repo or copy the package folder into your nTop workspace:
 
 ```bash
-git clone https://github.com/nTopology/Utilities.git
+git clone https://github.com/nTopology/Utilities-community.git
 ```
 
 The package lives at `packages/DaveMakesStuff/trim-curve-at-point/`.

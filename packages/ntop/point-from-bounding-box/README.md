@@ -7,7 +7,7 @@ Input an implicit body and extract a point on the bounding box based on the min,
 Clone this repo or copy the package folder into your nTop workspace:
 
 ```bash
-git clone https://github.com/nTopology/Utilities.git
+git clone https://github.com/nTopology/Utilities-community.git
 ```
 
 The package lives at `packages/ntop/point-from-bounding-box/`.

@@ -7,7 +7,7 @@ This custom block will split a body into different sections to fit inside the pr
 Clone this repo or copy the package folder into your nTop workspace:
 
 ```bash
-git clone https://github.com/nTopology/Utilities.git
+git clone https://github.com/nTopology/Utilities-community.git
 ```
 
 The package lives at `packages/ntop/split-with-printer-volume/`.

@@ -1,0 +1,25 @@
+{
+  "id": "fury-rc-finite-edges",
+  "type": "Bundle",
+  "title": "Fury RC: finite trailing-edge geometry",
+  "summary": "Inspect the native Fury RC appearance study with finite trailing edges, editable loft guides, and retained mesh-readiness lessons.",
+  "author": "bradrothenberg",
+  "org": "nTop",
+  "version": "0.1.0",
+  "ntopVersion": "6.0",
+  "license": "MIT",
+  "domain": "Aerospace",
+  "application": "Geometry",
+  "complexity": "Advanced",
+  "tags": [
+    "notebook-api",
+    "parametric",
+    "modeling",
+    "geometry",
+    "ai-assisted"
+  ],
+  "aiModel": "GPT-6 Astra",
+  "preview": "geometry",
+  "coverImage": "cover.png",
+  "packageFile": "fury-rc-finite-edges.ntop"
+}

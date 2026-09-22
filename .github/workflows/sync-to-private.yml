@@ -56,6 +56,12 @@ jobs:
         with:
           ref: ${{ github.event.pull_request.merge_commit_sha }}
           path: community
+          lfs: true
+          # Safe: this job only runs post-merge (see job-level `if` above), so
+          # merge_commit_sha is already part of protected `main`, not
+          # unreviewed fork code. actions/checkout's fork-checkout guard
+          # otherwise blocks any checkout in a pull_request_target workflow.
+          allow-unsafe-pr-checkout: true
 
       - name: Checkout private Utilities with PRIVATE_REPO_TOKEN
         if: steps.changes.outputs.has_packages == 'true'
@@ -65,6 +71,7 @@ jobs:
           token: ${{ secrets.PRIVATE_REPO_TOKEN }}
           path: private
           fetch-depth: 0
+          lfs: true
 
       - name: Copy package folders from community into private and push branch
         if: steps.changes.outputs.has_packages == 'true'
@@ -81,7 +88,7 @@ jobs:
           # Collect unique top-level package folders from the changed-files list,
           # e.g. "packages/foo/bar/manifest.json" -> "packages/foo/bar".
           packages=$(grep '^packages/' /tmp/sync/changed.txt \
-            | awk -F/ 'NF >= 3 {print $1"/"$2"/"$3}' | sort -u)
+            | awk -F/ '$2 == "_schema" {print $1"/"$2; next} NF >= 3 {print $1"/"$2"/"$3}' | sort -u)
           if [ -z "$packages" ]; then
             echo "No top-level package folders detected."
             exit 0
@@ -100,19 +107,58 @@ jobs:
           BRANCH="sync/community-pr-${PR_NUMBER}"
           git checkout -B "$BRANCH"
 
+          : > /tmp/sync/added.txt
+          : > /tmp/sync/updated.txt
+          : > /tmp/sync/deleted.txt
+
           # rsync each package folder community -> private. --delete handles
           # file removals inside the same package; we never touch other folders.
+          # If the package folder no longer exists in community at all (the
+          # whole package was deleted), remove it from private too.
           while IFS= read -r pkg; do
             [ -n "$pkg" ] || continue
+
+            if [ ! -d "../community/$pkg" ]; then
+              if [ -d "$pkg" ]; then
+                echo "Package removed in community, deleting from private: $pkg"
+                git rm -r --ignore-unmatch --quiet "$pkg"
+                echo "$pkg" >> /tmp/sync/deleted.txt
+              fi
+              continue
+            fi
+
+            pkg_existed=false
+            [ -d "$pkg" ] && pkg_existed=true
+
             mkdir -p "$pkg"
-            rsync -av --delete "../community/$pkg/" "$pkg/"
-            # Stamp communitySource so the private repo knows this package
-            # originated from the community repo (used for commit history link).
+
+            # featured/verified are private-repo-only controls; the community
+            # manifest never sets them. Preserve whatever's already there
+            # before rsync overwrites manifest.json wholesale.
+            PRESERVE="{}"
             if [ -f "$pkg/manifest.json" ]; then
-              jq '. + {"communitySource": true}' "$pkg/manifest.json" > /tmp/_manifest.json \
+              PRESERVE=$(jq -c '{featured, verified} | with_entries(select(.value != null))' "$pkg/manifest.json")
+            fi
+
+            rsync -av --delete "../community/$pkg/" "$pkg/"
+
+            if [ -f "$pkg/manifest.json" ]; then
+              # Stamp communitySource so the private repo knows this package
+              # originated from the community repo (used for commit history link),
+              # and restore the preserved private-only fields.
+              jq --argjson preserve "$PRESERVE" '. + {"communitySource": true} + $preserve' \
+                "$pkg/manifest.json" > /tmp/_manifest.json \
                 && mv /tmp/_manifest.json "$pkg/manifest.json"
             fi
             git add "$pkg"
+
+            if ! git diff --cached --quiet -- "$pkg"; then
+              if [ "$pkg_existed" = true ]; then
+                echo "$pkg" >> /tmp/sync/updated.txt
+              else
+                echo "$pkg" >> /tmp/sync/added.txt
+              fi
+            fi
           done <<< "$packages"
 
           if git diff --cached --quiet; then
@@ -142,12 +188,29 @@ jobs:
             exit 0
           fi
 
+          format_list() {
+            if [ -s "$1" ]; then
+              sed 's/^/- /' "$1"
+            else
+              echo "_none_"
+            fi
+          }
+
           BODY=$(cat <<EOF
           Auto-synced from \`nTopology/Utilities-community\` PR [#${PR_NUMBER}](${PR_URL}) by @${PR_AUTHOR}.
 
           The contributor PR was reviewed on the public mirror; this follow-up PR
           carries the same files into the private source repo so the next deploy
           can publish them on community.ntop.com.
+
+          **Packages added:**
+          $(format_list /tmp/sync/added.txt)
+
+          **Packages updated:**
+          $(format_list /tmp/sync/updated.txt)
+
+          **Packages deleted:**
+          $(format_list /tmp/sync/deleted.txt)
 
           ---
 

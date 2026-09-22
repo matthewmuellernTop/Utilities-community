@@ -1,0 +1,25 @@
+{
+  "id": "propeller-eight-inch",
+  "type": "Bundle",
+  "title": "Eight-inch propeller and retained spinner",
+  "summary": "Explore an editable propeller assembly with a separate spinner, motor reference, and nominal retention hardware.",
+  "author": "bradrothenberg",
+  "org": "nTop",
+  "version": "0.1.0",
+  "ntopVersion": "6.1",
+  "license": "MIT",
+  "domain": "Aerospace",
+  "application": "Geometry",
+  "complexity": "Advanced",
+  "tags": [
+    "notebook-api",
+    "parametric",
+    "modeling",
+    "geometry",
+    "ai-assisted"
+  ],
+  "aiModel": "GPT-6 Astra",
+  "preview": "geometry",
+  "coverImage": "cover.png",
+  "packageFile": "propeller-eight-inch.ntop"
+}

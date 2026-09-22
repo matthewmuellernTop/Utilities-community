@@ -1,0 +1,27 @@
+{
+  "id": "marine-return-loop-propeller-r5",
+  "type": "Notebook",
+  "title": "Marine R5: return-loop propeller and drive",
+  "summary": "Inspect continuous leading-edge return loops, independent root trims, a finished aft shoulder, and separate ogive and drive components.",
+  "author": "bradrothenberg",
+  "org": "nTop",
+  "version": "0.1.0",
+  "ntopVersion": "6.1",
+  "license": "MIT",
+  "domain": "Mechanical",
+  "application": "Geometry",
+  "complexity": "Advanced",
+  "tags": [
+    "notebook-api",
+    "parametric",
+    "modeling",
+    "geometry",
+    "ai-assisted"
+  ],
+  "aiModel": "GPT-6 Astra",
+  "preview": "geometry",
+  "coverImage": "cover.png",
+  "packageFile": "marine-return-loop-propeller-r5.ntop",
+  "distribution": "redirect",
+  "redirectUrl": "https://media.githubusercontent.com/media/nTopology/Utilities-community/main/packages/bradrothenberg/marine-return-loop-propeller-r5/marine-return-loop-propeller-r5.ntop"
+}

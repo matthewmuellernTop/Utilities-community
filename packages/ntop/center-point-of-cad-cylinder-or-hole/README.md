@@ -7,7 +7,7 @@ The CB will give you the Center Point of a CAD cylinder or hole.
 Clone this repo or copy the package folder into your nTop workspace:
 
 ```bash
-git clone https://github.com/nTopology/Utilities.git
+git clone https://github.com/nTopology/Utilities-community.git
 ```
 
 The package lives at `packages/ntop/center-point-of-cad-cylinder-or-hole/`.

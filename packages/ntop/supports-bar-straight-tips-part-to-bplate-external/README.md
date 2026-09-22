@@ -7,7 +7,7 @@ This CB creates cylindrical bar supports with straight tips and flared base from
 Clone this repo or copy the package folder into your nTop workspace:
 
 ```bash
-git clone https://github.com/nTopology/Utilities.git
+git clone https://github.com/nTopology/Utilities-community.git
 ```
 
 The package lives at `packages/ntop/supports-bar-straight-tips-part-to-bplate-external/`.

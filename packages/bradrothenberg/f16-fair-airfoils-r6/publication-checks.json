@@ -1,0 +1,18 @@
+{
+  "scope": "Offline publication preparation; no new native execution",
+  "models": [
+    {
+      "file": "f16-fair-airfoils-r6.ntop",
+      "source_sha256": "f4d7016ffdfb43c5020c5dc70ed6224db06c52992f1adecd37c1ce965b51e4bc",
+      "published_sha256": "f4d7016ffdfb43c5020c5dc70ed6224db06c52992f1adecd37c1ce965b51e4bc",
+      "bytes": 2162456,
+      "changed_chunks": [],
+      "relative_export_filenames": [],
+      "source_unchanged": true,
+      "geometry_graph_and_binary_payloads_unchanged": true,
+      "new_native_execution": false
+    }
+  ],
+  "cover_sha256": "cab03f0a7683635d033b6660e861fd548619f73a35a22333b78f52bab9cd9101",
+  "source_commit": "92f13bc0a873aacba62526ee43e9e6895ef051f8"
+}

@@ -1,0 +1,18 @@
+{
+  "scope": "Offline publication preparation; no new native execution",
+  "models": [
+    {
+      "file": "a12-cockpit-lofts-r33.ntop",
+      "source_sha256": "f6ff2424eb837d27cc30c13fae96474e57a18dae242ab8a61d5ab62d62bc9cb5",
+      "published_sha256": "f6ff2424eb837d27cc30c13fae96474e57a18dae242ab8a61d5ab62d62bc9cb5",
+      "bytes": 1633770,
+      "changed_chunks": [],
+      "relative_export_filenames": [],
+      "source_unchanged": true,
+      "geometry_graph_and_binary_payloads_unchanged": true,
+      "new_native_execution": false
+    }
+  ],
+  "cover_sha256": "9774b6acd1bf763abcc592c0f13b23468c9296bd991135f66b71420c096568a3",
+  "source_commit": "92f13bc0a873aacba62526ee43e9e6895ef051f8"
+}

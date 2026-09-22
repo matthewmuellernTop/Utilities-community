@@ -1,0 +1,26 @@
+{
+  "id": "two-rail-propeller-studies",
+  "type": "Bundle",
+  "title": "Two-rail propeller studies: twenty editable graphs",
+  "summary": "Explore ten original blade forms and ten airfoil candidates through complete saved Notebook API recipes, including scimitar, twisted, petal, and closed-loop studies.",
+  "author": "bradrothenberg",
+  "org": "nTop",
+  "version": "0.1.0",
+  "ntopVersion": "6.1",
+  "license": "MIT",
+  "domain": "Geometry",
+  "application": "Geometry",
+  "complexity": "Advanced",
+  "tags": [
+    "notebook-api",
+    "two-rail",
+    "sweep",
+    "airfoil",
+    "propeller",
+    "ai-assisted"
+  ],
+  "aiModel": "GPT-6 Astra",
+  "preview": "geometry",
+  "coverImage": "cover.png",
+  "packageFile": "studies.json"
+}

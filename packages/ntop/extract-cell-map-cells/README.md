@@ -7,7 +7,7 @@ Extracts the Cells of a Cell Map as seperate Mesh Boxes. The boxes will be under
 Clone this repo or copy the package folder into your nTop workspace:
 
 ```bash
-git clone https://github.com/nTopology/Utilities.git
+git clone https://github.com/nTopology/Utilities-community.git
 ```
 
 The package lives at `packages/ntop/extract-cell-map-cells/`.

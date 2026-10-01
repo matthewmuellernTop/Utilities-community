@@ -51,7 +51,8 @@ jobs:
         run: |
           set -euo pipefail
 
-          changed=""
+          added=""
+          updated=""
 
           for pkg_path in community/packages/*/*; do
             [ -d "$pkg_path" ] || continue
@@ -65,18 +66,33 @@ jobs:
 
             # If rsync reports any file changes (skip the summary lines)
             if echo "$delta" | grep -qvE '^(sending|sent|total|$)'; then
-              echo "Changed: $rel"
-              changed="$changed $rel"
+              if [ -d "private/$rel" ]; then
+                echo "Updated: $rel"
+                updated="$updated $rel"
+              else
+                echo "Added: $rel"
+                added="$added $rel"
+              fi
             fi
           done
 
-          if [ -z "$changed" ]; then
-            : > /tmp/changed_packages.txt
+          if [ -z "$added" ]; then
+            : > /tmp/added_packages.txt
           else
-            echo "$changed" | xargs -n1 > /tmp/changed_packages.txt
-            echo "Packages to sync:"
-            cat /tmp/changed_packages.txt
+            echo "$added" | xargs -n1 > /tmp/added_packages.txt
+            echo "Packages to add:"
+            cat /tmp/added_packages.txt
           fi
+
+          if [ -z "$updated" ]; then
+            : > /tmp/updated_packages.txt
+          else
+            echo "$updated" | xargs -n1 > /tmp/updated_packages.txt
+            echo "Packages to update:"
+            cat /tmp/updated_packages.txt
+          fi
+
+          cat /tmp/added_packages.txt /tmp/updated_packages.txt > /tmp/changed_packages.txt
 
           # Packages present in private that no longer exist in community.
           # Only ones private got from community originally (communitySource:
@@ -101,7 +117,7 @@ jobs:
             cat /tmp/removed_packages.txt
           fi
 
-          if [ -s /tmp/changed_packages.txt ] || [ -s /tmp/removed_packages.txt ]; then
+          if [ -s /tmp/added_packages.txt ] || [ -s /tmp/updated_packages.txt ] || [ -s /tmp/removed_packages.txt ]; then
             echo "has_changes=true" >> "$GITHUB_OUTPUT"
           else
             echo "No differences found between community and private. Nothing to sync."
@@ -172,11 +188,15 @@ jobs:
             exit 0
           fi
 
-          # Build commit message listing all synced/removed packages
+          # Build commit message listing added/updated/removed packages
           COMMIT_MSG="Manual sync from Utilities-community\n"
-          if [ -s /tmp/changed_packages.txt ]; then
-            PKG_LIST=$(sed 's/^/  - /' /tmp/changed_packages.txt)
-            COMMIT_MSG="${COMMIT_MSG}\nSynced packages:\n${PKG_LIST}\n"
+          if [ -s /tmp/added_packages.txt ]; then
+            PKG_LIST=$(sed 's/^/  - /' /tmp/added_packages.txt)
+            COMMIT_MSG="${COMMIT_MSG}\nAdded packages:\n${PKG_LIST}\n"
+          fi
+          if [ -s /tmp/updated_packages.txt ]; then
+            PKG_LIST=$(sed 's/^/  - /' /tmp/updated_packages.txt)
+            COMMIT_MSG="${COMMIT_MSG}\nUpdated packages:\n${PKG_LIST}\n"
           fi
           if [ -s /tmp/removed_packages.txt ]; then
             REMOVED_LIST=$(sed 's/^/  - /' /tmp/removed_packages.txt)
@@ -189,9 +209,13 @@ jobs:
 
           # Build PR body
           BODY="Manual sync from \`nTopology/Utilities-community\` triggered by @${ACTOR}."
-          if [ -s /tmp/changed_packages.txt ]; then
-            PKG_BODY=$(sed 's/^/- /' /tmp/changed_packages.txt)
-            BODY="${BODY}\n\n**Packages synced:**\n${PKG_BODY}"
+          if [ -s /tmp/added_packages.txt ]; then
+            PKG_BODY=$(sed 's/^/- /' /tmp/added_packages.txt)
+            BODY="${BODY}\n\n**Packages added:**\n${PKG_BODY}"
+          fi
+          if [ -s /tmp/updated_packages.txt ]; then
+            PKG_BODY=$(sed 's/^/- /' /tmp/updated_packages.txt)
+            BODY="${BODY}\n\n**Packages updated:**\n${PKG_BODY}"
           fi
           if [ -s /tmp/removed_packages.txt ]; then
             REMOVED_BODY=$(sed 's/^/- /' /tmp/removed_packages.txt)

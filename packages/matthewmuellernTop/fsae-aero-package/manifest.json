@@ -1,0 +1,18 @@
+{
+  "id": "fsae-aero-package",
+  "type": "Notebook",
+  "title": "FSAE Aero Package",
+  "summary": "Parametric Formula SAE aero package: front wing and endplates, rear wing and endplates, body and mounts, and wheels, with NACA airfoil sections and a downforce/drag/L-D results table.",
+  "author": "matthewmuellernTop",
+  "org": "nTop",
+  "version": "1.0.0",
+  "ntopVersion": "6.1+",
+  "license": "MIT",
+  "domain": "Aerospace",
+  "application": "Geometry",
+  "complexity": "Intermediate",
+  "tags": ["fsae", "motorsport", "aerodynamics", "wing", "airfoil", "fuselage", "flow-analysis"],
+  "preview": "geometry",
+  "coverImage": "cover.png",
+  "packageFile": "fsae-aero-package.ntop"
+}

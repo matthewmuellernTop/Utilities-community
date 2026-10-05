@@ -1,0 +1,18 @@
+{
+  "id": "fsae-cooling-sleeve-gyroid-cht",
+  "type": "Notebook",
+  "title": "FSAE Motor Cooling Sleeve: Gyroid CHT",
+  "summary": "Parametric gyroid-lattice water jacket for an FSAE EV motor stator, with a conjugate heat transfer (CHT) analysis reporting pressure drop, bore temperature and coolant outlet temperature.",
+  "author": "matthewmuellernTop",
+  "org": "nTop",
+  "version": "1.0.0",
+  "ntopVersion": "6.1+",
+  "license": "MIT",
+  "domain": "Thermal",
+  "application": "Simulation",
+  "complexity": "Advanced",
+  "tags": ["fsae", "motor-cooling", "gyroid", "tpms", "cht", "heat-transfer", "flow-analysis", "doe"],
+  "preview": "geometry",
+  "coverImage": "cover.png",
+  "packageFile": "fsae-cooling-sleeve-gyroid-cht.ntop"
+}

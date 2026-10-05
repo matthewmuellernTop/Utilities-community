@@ -1,0 +1,18 @@
+{
+  "id": "single-panel-wing-laser-cut-structure",
+  "type": "Bundle",
+  "title": "Single Panel Wing Laser Cut Structure",
+  "summary": "Parametric NACA wing (span, chord, taper, sweep, twist) turned into slotted, interlocking ribs and spars, exported as 3MF slices and converted to laser-cut SVGs with an included Python script.",
+  "author": "matthewmuellernTop",
+  "org": "nTop",
+  "version": "1.0.0",
+  "ntopVersion": "6.1+",
+  "license": "MIT",
+  "domain": "Aerospace",
+  "application": "Manufacturing",
+  "complexity": "Intermediate",
+  "tags": ["wing", "airfoil", "naca", "laser-cutting", "ribs-and-spars", "svg", "python", "rc-aircraft"],
+  "preview": "geometry",
+  "coverImage": "cover.jpg",
+  "packageFile": "single-panel-wing-laser-cut-structure.ntop"
+}

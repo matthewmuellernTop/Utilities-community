@@ -1,0 +1,18 @@
+{
+  "id": "brake-caliper-topology-optimization",
+  "type": "Notebook",
+  "title": "Brake Caliper Topology Optimization Workflow",
+  "summary": "End-to-end brake caliper workflow: CAD import, FE meshing and boundaries, static analysis, stress- and volume-constrained topology optimization, smoothing, validation analysis and export.",
+  "author": "matthewmuellernTop",
+  "org": "nTop",
+  "version": "1.0.0",
+  "ntopVersion": "6.1+",
+  "license": "MIT",
+  "domain": "Optimization",
+  "application": "Simulation",
+  "complexity": "Advanced",
+  "tags": ["brake-caliper", "topology-opt", "fea", "static-analysis", "lightweighting", "motorsport", "workflow"],
+  "preview": "geometry",
+  "coverImage": "cover.png",
+  "packageFile": "brake-caliper-topology-optimization.ntop"
+}

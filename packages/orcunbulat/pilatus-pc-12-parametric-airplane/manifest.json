@@ -1,0 +1,20 @@
+{
+  "id": "pilatus-pc-12-parametric-airplane",
+  "type": "Notebook",
+  "title": "Pilatus PC 12 Parametric Airplane",
+  "summary": "Parametric model of a civilian aircraft Pilatus PC 12. ",
+  "author": "orcunbulat",
+  "org": "nTop",
+  "version": "0.1.0",
+  "ntopVersion": "5.53+",
+  "license": "MIT",
+  "domain": "Aerospace",
+  "complexity": "Advanced",
+  "tags": [
+    "airplane",
+    "parametric",
+    "modelling",
+    "aircraft"
+  ],
+  "preview": "geometry"
+}

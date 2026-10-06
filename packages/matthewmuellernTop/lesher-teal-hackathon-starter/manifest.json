@@ -1,0 +1,19 @@
+{
+  "id": "lesher-teal-hackathon-starter",
+  "type": "Bundle",
+  "title": "Lesher Teal Hackathon Starter with Quick Aero Estimates",
+  "summary": "Parametric Lesher Teal aircraft with a Run Command link to a Python AeroSandbox script that updates cruise CL, CD, L/D and neutral point within seconds of any geometry change.",
+  "author": "matthewmuellernTop",
+  "org": "nTop",
+  "version": "1.0.0",
+  "ntopVersion": "6.2+",
+  "license": "MIT",
+  "domain": "Aerospace",
+  "application": "Analysis",
+  "complexity": "Intermediate",
+  "tags": ["aircraft", "aerodynamics", "aerosandbox", "doe", "run-command", "python", "flow-analysis", "ai-assisted"],
+  "preview": "geometry",
+  "coverImage": "cover.png",
+  "packageFile": "lesher-teal-hackathon-starter.ntop",
+  "aiModel": "Claude"
+}

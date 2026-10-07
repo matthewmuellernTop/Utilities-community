@@ -57,14 +57,17 @@ If AeroSandbox is installed in a different Python (a venv or conda env), set
 
 ## Using it
 
-Every aero-relevant input is a named variable, in the Wings, Fuselage and Stabilizers
-sections:
+Every aero-relevant input is a named variable, in the Wings, Fuselage, Stabilizers
+and Mass Estimate sections:
 
 - **Wing:** root point (its placement), chord, airfoil, span, sweep, taper, twist, dihedral
 - **H-stab:** the same eight inputs
 - **Twin fins** (`VStab`): root point, chord, airfoil, height, sweep, taper
 - **Ventral fin:** root point (`Lower Stab Root`), chord, airfoil, height, sweep, taper
 - **Fuselage:** the top, side and bottom rail point lists
+- **Mass Estimate:** a mass and a point location for each of payload, engine, structures
+  and fuel (rough estimates that total the 500 kg max takeoff weight). A group weight
+  statement block turns them into the total mass and CG the aero estimate uses.
 
 Both the geometry blocks and the aero estimate read these variables. When you replace a
 typed value with an expression on your own design parameters, the estimate follows
@@ -73,9 +76,10 @@ automatically.
 | Direction | Name | Meaning |
 |---|---|---|
 | Input | Wing, H-stab, fin, ventral and fuselage variables | Geometry, in model units |
-| Input | Aircraft Mass | kg (500 = Teal max takeoff weight) |
+| Input | Payload, Engine, Structures and Fuel Mass and Location | Mass Estimate section: kg and m for each group |
 | Input | Cruise Speed (m per s) | m/s (82 = 160 kn) |
-| Input | CG X | CG location; static margin is measured about it |
+| Output | Total Mass, Mass Statement CG | Group weight statement result; drives Aircraft Mass and CG X |
+| Output | Aircraft Mass, CG X | Mass and CG sent to the aero script; static margin is measured about CG X |
 | Output | Cruise CL, Cruise CD, Cruise L/D | At the cruise mass and speed, sea level |
 | Output | Max L/D | Best lift-to-drag ratio over angle of attack |
 | Output | Neutral Point X, Static Margin pct MAC | Pitch stability |

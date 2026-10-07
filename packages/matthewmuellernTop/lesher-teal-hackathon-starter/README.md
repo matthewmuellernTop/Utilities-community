@@ -24,13 +24,10 @@ The aero integration (`teal_aero.py` and the Run Command chain) was built with C
 | `requirements.txt` | Python dependency (`aerosandbox`) |
 | `aero-output-example.png` | Example of the plot the script writes |
 
-The site's download button gives you the notebook. Get `teal_aero.py` from
-[this package folder on GitHub](https://github.com/nTopology/Utilities-community/tree/main/packages/matthewmuellernTop/lesher-teal-hackathon-starter),
-or clone the whole repo:
-
-```bash
-git clone https://github.com/nTopology/Utilities-community.git
-```
+The site's download button gives you a zip with the notebook, `teal_aero.py`,
+`requirements.txt`, this README and the license. `aero-output-example.png` and the
+publication record are only in the
+[package folder on GitHub](https://github.com/nTopology/Utilities-community/tree/main/packages/matthewmuellernTop/lesher-teal-hackathon-starter).
 
 ## Setup (about 5 minutes)
 
